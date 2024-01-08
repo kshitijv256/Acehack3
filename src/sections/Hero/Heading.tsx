@@ -84,10 +84,10 @@ const Heading: React.FC<{ currentStepIndex: number }> = ({
         </div>
       </Title>
       <Subtitle style={{ visibility: glitchFrame >= 2 ? "visible" : "hidden" }}>
-        September 15-17, 2023 • In-person event {!brk && "•"}
+        March 29-30, 2024 • In-person event {!brk && "• "}
         {brk && <br />}
-        <StyledLogo alt="MLH Logo" src={MLHLogo} />
-        Official Member
+        {/* <StyledLogo alt="MLH Logo" src={MLHLogo} /> */}
+        UEM Jaipur
       </Subtitle>
       <GlitchWrapper
         style={{
@@ -384,7 +384,8 @@ const HeroRightGlow = styled.div`
   left: 800px;
   top: 250px;
 
-  background: rgba(95, 83, 109, 0.3);
+  background: #7e22ce;
+  opacity: 0.2;
   filter: blur(200px);
   will-change: filter;
   transform: rotate(-20.03deg);
@@ -414,7 +415,8 @@ const HeroLeftGlow = styled.div`
   left: 250x;
   top: -200px;
 
-  background: rgba(77, 117, 125, 0.25);
+  background: #7e22ce;
+  opacity: 0.2;
   filter: blur(225px);
   will-change: filter;
   transform: rotate(51.04deg);

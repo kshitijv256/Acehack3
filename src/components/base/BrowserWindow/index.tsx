@@ -13,6 +13,7 @@ const WindowContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  border-radius: 4px;
   border: 2px solid ${({ theme }) => theme.colors.text.dark.white};
 `;
 
@@ -56,7 +57,6 @@ const ShadowBox = styled.div<WindowProps>`
 const WindowToolbarIcon = styled.div`
   width: 14px;
   height: 14px;
-  background: rgba(255, 255, 255, 0.5);
   border: 2px solid ${({ theme }) => theme.colors.text.dark.white};
 
   ${mediaQueries.largeMobile} {
@@ -96,9 +96,9 @@ const BrowserWindow: React.FC<Props> = ({
       gradientStartColor={gradientStartColor}
       gradientEndColor={gradientEndColor}
     >
-      <WindowToolbarIcon />
-      <WindowToolbarIcon />
-      <WindowToolbarIcon />
+      <WindowToolbarIcon style={{ background: "rgba(239, 68, 68, 0.5)" }} />
+      <WindowToolbarIcon style={{ background: "rgba(245, 158, 11, 0.5)" }} />
+      <WindowToolbarIcon style={{ background: "rgba(34, 197, 94, 0.5)" }} />
     </WindowToolbar>
     <WindowContent>{props.children}</WindowContent>
   </WindowContainer>
@@ -118,9 +118,9 @@ const BrowserWindowGradient: React.FC<Props> = ({
       gradientStartColor={gradientStartColor}
       gradientEndColor={gradientEndColor}
     >
-      <WindowToolbarIcon />
-      <WindowToolbarIcon />
-      <WindowToolbarIcon />
+      <WindowToolbarIcon style={{ background: "rgba(239, 68, 68, 0.5)" }} />
+      <WindowToolbarIcon style={{ background: "rgba(245, 158, 11, 0.5)" }} />
+      <WindowToolbarIcon style={{ background: "rgba(34, 197, 94, 0.5)" }} />
     </WindowToolbar>
     <WindowContentGradient
       gradientStartColor={gradientStartColor}
