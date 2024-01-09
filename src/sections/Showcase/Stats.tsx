@@ -474,7 +474,7 @@ const PanelRight = styled(Panel)<imgProps>`
 
 const Hackers = styled(PanelLeft)<imgProps>`
   top: 12%;
-  width: 21.3%;
+  width: 23.3%;
   left: 0.8%;
 
   ${mediaQueries.tablet} {

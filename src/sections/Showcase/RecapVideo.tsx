@@ -9,7 +9,7 @@ import { mediaQueries } from "src/utils/responsive";
 import { css } from "styled-components";
 import styled from "styled-components";
 
-const RECAP_VIDEO_ID = "2e4WxsIUPRc";
+const RECAP_VIDEO_ID = "bR_YNme5nwk";
 
 const AUTOPLAY_URL = `https://www.youtube.com/embed/${RECAP_VIDEO_ID}?rel=0&autoplay=1&color=white&loop=1&enablejsapi=1&controls=0&modestbranding=1&showinfo=0&mute=1&playlist=${RECAP_VIDEO_ID}`;
 const MODAL_URL = `https://www.youtube.com/embed/${RECAP_VIDEO_ID}?rel=0&loop=1&color=white&modestbranding=1&showinfo=0`;
@@ -17,6 +17,7 @@ const MODAL_URL = `https://www.youtube.com/embed/${RECAP_VIDEO_ID}?rel=0&loop=1&
 const autoplaySize = css`
   width: 100%;
   height: 100%;
+  translate: -62% -20%;
 `;
 
 const ModalVideoContainer = styled.div`
@@ -59,6 +60,7 @@ const VideoModal = styled(UnstyledModal)`
 
 const VideoOverlay = styled.div`
   ${autoplaySize}
+  translate: 0% 0%;
   position: absolute;
   top: 0;
   left: 0;
@@ -92,6 +94,7 @@ const PlayButton = styled(Icon).attrs({ name: "play" })`
 
 const PlayButtonContainer = styled.div`
   ${autoplaySize}
+  translate: 0% 0%;
   position: absolute;
   top: 0;
   left: 0;

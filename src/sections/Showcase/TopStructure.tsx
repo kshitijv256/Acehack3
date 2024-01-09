@@ -4,7 +4,7 @@ import { LargeBodyMedium } from "src/styles";
 import { mediaQueries, useWindowSize } from "src/utils";
 import styled, { css } from "styled-components";
 
-const ROLLINGTEXT = "ACEHACK 3.0 ".repeat(12);
+const ROLLINGTEXT = "ACEHACK 2.0 ".repeat(12);
 
 interface TextProps {
   w: number;
