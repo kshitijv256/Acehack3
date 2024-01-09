@@ -7,6 +7,7 @@ import {
   SectionWrapper,
 } from "src/components/base";
 import GlowText from "src/components/base/GlowText";
+import { SectionId } from "src/constants";
 import { mediaQueries, useDeviceSize, useWindowSize } from "src/utils";
 import styled, { useTheme } from "styled-components";
 
@@ -85,7 +86,7 @@ const TalkingPoints: React.FC = () => {
   `;
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id={SectionId.STORIES}>
       <ContentWrapper
         style={{
           padding: isTablet ? "48px 32px" : "96px 48px 128px 48px",

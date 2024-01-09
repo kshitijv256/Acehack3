@@ -13,7 +13,7 @@ export interface NavBarProps {
 
 export const SECTIONS = {
   [SectionId.ABOUT]: "About",
-  [SectionId.STORIES]: "Stories",
+  [SectionId.STORIES]: "Prizes",
   [SectionId.SPONSORS]: "Sponsors",
   [SectionId.FAQ]: "FAQ",
 };

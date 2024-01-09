@@ -80,7 +80,7 @@ const Sponsors: React.FC = () => {
 
   return (
     <StyledSectionWrapper id={SectionId.SPONSORS}>
-      <StarGlowCyanIcon
+      {/* <StarGlowCyanIcon
         alt="Star glow cyan"
         src={StarGlowCyan}
         loading="lazy"
@@ -99,8 +99,8 @@ const Sponsors: React.FC = () => {
         alt="Long rectangle glow yellow"
         src={LongRectGlowYellow}
         loading="lazy"
-      />
-      <GearGlowCyanIcon
+      /> */}
+      {/* <GearGlowCyanIcon
         alt="Gear glow cyan"
         src={GearGlowCyan}
         loading="lazy"
@@ -174,7 +174,7 @@ const Sponsors: React.FC = () => {
         alt="Gear glow orange"
         src={GearGlowOrange}
         loading="lazy"
-      />
+      /> */}
       <StyledContentWrapper>
         <HeadingContainer>
           <StyledHeading1>
@@ -203,16 +203,18 @@ const Sponsors: React.FC = () => {
           >
             <LargeBodyBold>
               <a
-                href="mailto:sponsor@hackthenorth.com"
+                href="https://drive.google.com/file/d/1Wl2124ChuDGRy0FVs6JtzwBqq7w6EJ_X/view?usp=sharing"
                 style={{ textDecoration: "none", color: "inherit" }}
+                target="_blank"
+                rel="noreferrer"
               >
                 Become a sponsor
               </a>
             </LargeBodyBold>
           </Button>
         </SummaryContainer>
-        <SponsorsCarousel />
-        <SponsorsRowsContainer>
+        {/* <SponsorsCarousel /> */}
+        {/* <SponsorsRowsContainer>
           <SponsorsSectionDivider>
             {goldSponsors.map((value, index) => (
               <SponsorsContainer
@@ -368,13 +370,13 @@ const Sponsors: React.FC = () => {
               </SponsorsContainer>
             ))}
           </SponsorsSectionDivider>
-        </SponsorsRowsContainer>
+        </SponsorsRowsContainer> */}
         <EndTextContainer>
           <StyledHeading1 style={{ marginBottom: "24px" }}>
-            ...and more to come
+            ...coming soon
           </StyledHeading1>
         </EndTextContainer>
-        <OurPartnersContainer>
+        {/* <OurPartnersContainer>
           <StyledHeading1>
             Our{" "}
             <GlowText color={theme.colors.primary.purple}>partners</GlowText>
@@ -423,7 +425,7 @@ const Sponsors: React.FC = () => {
               </SponsorsContainer>
             ))}
           </SponsorsSectionDivider>
-        </SponsorsRowsContainer>
+        </SponsorsRowsContainer> */}
       </StyledContentWrapper>
     </StyledSectionWrapper>
   );

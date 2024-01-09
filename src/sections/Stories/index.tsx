@@ -66,10 +66,7 @@ const Stories: React.FC = () => {
   };
 
   return (
-    <SectionWrapper
-      style={{ backgroundColor: "#2A2A4F" }}
-      id={SectionId.STORIES}
-    >
+    <SectionWrapper style={{ backgroundColor: "#2A2A4F" }}>
       <TopFrameContainer alt="Animated frame" src={AnimatedFrame} />
       <ContentWrapper
         style={{ padding: isTablet ? "48px 32px 0 32px" : "128px 48px 0 48px" }}

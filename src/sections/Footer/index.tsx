@@ -526,7 +526,7 @@ const Footer: React.FC = () => {
             </div>
           ))}
         </LeftGrid> */}
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -535,13 +535,13 @@ const Footer: React.FC = () => {
             gap: "50px",
           }}
         >
-          {/* <FooterContainer>
+          <FooterContainer>
             <FooterText>
               Made with 💙 in Waterloo, Ontario, Canada 🇨🇦
             </FooterText>
             <FooterText id="personal"></FooterText>
-          </FooterContainer> */}
-        </div>
+          </FooterContainer>
+        </div> */}
         {/* <RightGrid>
           {secondHalf.map((organizer, i) => (
             <div
@@ -573,12 +573,19 @@ const Footer: React.FC = () => {
         </MinorBottomContainer> */}
         <div>
           <CopyrightText style={{ color: `${theme.colors.text.dark.gray}` }}>
-            Copyright © Techyon, 2023
+            Copyright © Acehack, 2024
           </CopyrightText>
         </div>
+        {/* <KshitijLogo>made by Kshitij Verma</KshitijLogo> */}
       </BottomTextContainer>
     </SectionWrapper>
   );
 };
 
 export default Footer;
+
+const KshitijLogo = styled.div`
+  color: ${({ theme }) => theme.colors.text.dark.white};
+  margin-right: 20px;
+  margin-top: 10px;
+`;

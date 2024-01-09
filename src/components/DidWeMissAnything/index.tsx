@@ -77,12 +77,12 @@ const DidWeMissAnything: React.FC = () => {
       <SubtextWrapper>
         <Subtext>Reach out to us at&nbsp;</Subtext>
         <StyledLink
-          href="mailto:hello@hackthenorth.com"
+          href="acehack@eduhubcommunity.tech"
           onClick={
             () => trackGoal("DDFIB6DS", 0) // Sign Up: Clicked Email Contact
           }
         >
-          hello@hackthenorth.com
+          acehack@eduhubcommunity.tech
         </StyledLink>{" "}
         <span role="img" aria-label="heart emoji">
           &nbsp;😊
@@ -104,7 +104,7 @@ const DidWeMissAnything: React.FC = () => {
           )
         )}
       </SocialsWrapper>
-      <MailingListSignup
+      {/* <MailingListSignup
         placeholder={
           windowWidth > 1125
             ? "Sign up for the latest news from Hack the North!"
@@ -112,7 +112,7 @@ const DidWeMissAnything: React.FC = () => {
         }
       >
         <p>Submit</p>
-      </MailingListSignup>
+      </MailingListSignup> */}
     </Wrapper>
   );
 };

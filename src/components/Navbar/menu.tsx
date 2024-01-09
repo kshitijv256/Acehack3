@@ -10,7 +10,7 @@ import { NavBarProps, SECTIONS, WEBSITE2022URL } from "./constants";
 
 const containerStyles: React.CSSProperties = {
   display: "flex",
-  justifyContent: "flex-end",
+  justifyContent: "flex-start",
   alignItems: "center",
   width: "100%",
   maxWidth: "1202px",
@@ -53,7 +53,14 @@ const Menu: React.FC<NavBarProps> = ({ notMainPage }) => {
             </div>
           );
         })}
-      {!notMainPage ? (
+      <div
+        style={{
+          alignSelf: "center",
+          marginLeft: "8px",
+          marginRight: "auto",
+        }}
+      ></div>
+      {/* {!notMainPage ? (
         <div style={wesbiteSectionStyles}>
           <a
             href={WEBSITE2022URL}
@@ -66,7 +73,7 @@ const Menu: React.FC<NavBarProps> = ({ notMainPage }) => {
             <BodyBold>2022</BodyBold>
           </a>
         </div>
-      ) : null}
+      ) : null} */}
       {Object.entries(SOCIALS).map(([id, { icon, link, fathomEventCode }]) => (
         <div style={{ alignSelf: "center" }} key={id}>
           <a

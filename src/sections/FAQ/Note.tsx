@@ -59,7 +59,7 @@ const BrowserWindowLeftWrapper = styled.div<BrowserProps>`
 `;
 const BrowserWindowRightWrapper = styled.div<BrowserProps>`
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 50%;
   width: 48%;
   transform: scale(0);
