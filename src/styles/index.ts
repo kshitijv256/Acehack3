@@ -25,6 +25,8 @@ export const theme: DefaultTheme = {
       cyan: "#19FBFF",
       blue: "#1FA6FF",
       purple: "#896BFF",
+      purpleDark: "#5b21b6",
+      purpleLight: "#a78bfa",
       pink: "#FF2CFB",
       yellow: "#F7CE58",
       orange: "#F09343",
@@ -36,6 +38,8 @@ export const theme: DefaultTheme = {
       pink: "#BF21BD",
       yellow: "#B1923B",
       orange: "#C47937",
+      purpleDark: "#5b21b6",
+      purpleLight: "#a78bfa",
     },
     state: {
       error: "#FE8888",

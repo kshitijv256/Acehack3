@@ -16,14 +16,14 @@ const SignUpBrowser: React.FC = () => {
   return (
     <SignUpContainer>
       <BrowserWindowGradient
-        gradientStartColor={theme.colors.primary.blue}
-        gradientEndColor={theme.colors.primary.purple}
+        gradientStartColor={theme.colors.primary.purpleDark}
+        gradientEndColor={theme.colors.secondary.purpleLight}
       >
         <BrowserContainer>
           <TextContainer>
-            Hacker applications for Hack the North 2023 are now closed.
+            Applications for AceHack 3.0 will open soon.
             <br />
-            Thank you to everyone who applied!
+            Stay tuned for updates!
           </TextContainer>
           <UnstyledLink
             newTab={true}

@@ -23,7 +23,7 @@ import GlitchEffect from "./Glitch";
 
 const words = [
   "AceHack",
-  "Friendship",
+  "Innovation",
   "Learning",
   "Collaboration",
   "Connection",
@@ -40,22 +40,22 @@ const Heading: React.FC<{ currentStepIndex: number }> = ({
   const currentWordIndex = currentStepIndex % words.length;
   const currentWord = words[currentWordIndex];
 
-  const [glitchFrame, setGlitchFrame] = useState(0); // done if === 4
+  const [glitchFrame, setGlitchFrame] = useState(4); // done if === 4
   const brk = useDeviceSize(581);
   const titleBrk = useDeviceSize(1124);
 
-  useEffect(() => {
-    setGlitchFrame(1);
-    setTimeout(() => {
-      setGlitchFrame(2);
-    }, GLITCH_DURATION1);
-    setTimeout(() => {
-      setGlitchFrame(3);
-    }, GLITCH_DURATION1 + GLITCH_DURATION2);
-    setTimeout(() => {
-      setGlitchFrame(4);
-    }, GLITCH_DURATION1 + GLITCH_DURATION2 + GLITCH_DURATION3);
-  }, []);
+  // useEffect(() => {
+  //   setGlitchFrame(1);
+  //   setTimeout(() => {
+  //     setGlitchFrame(2);
+  //   }, GLITCH_DURATION1);
+  //   setTimeout(() => {
+  //     setGlitchFrame(3);
+  //   }, GLITCH_DURATION1 + GLITCH_DURATION2);
+  //   setTimeout(() => {
+  //     setGlitchFrame(4);
+  //   }, GLITCH_DURATION1 + GLITCH_DURATION2 + GLITCH_DURATION3);
+  // }, []);
 
   return (
     <HeadingContainer>
@@ -71,7 +71,7 @@ const Heading: React.FC<{ currentStepIndex: number }> = ({
             <FullWidth>
               <TextLoop adjustingSpeed={10}>
                 <BottomPadding>AceHack</BottomPadding>
-                <BottomPadding>Friendship</BottomPadding>
+                <BottomPadding>Innovation</BottomPadding>
                 <BottomPadding>Learning</BottomPadding>
                 <BottomPadding>Collaboration</BottomPadding>
                 <BottomPadding>Connection</BottomPadding>
@@ -415,7 +415,7 @@ const HeroLeftGlow = styled.div`
   left: 250x;
   top: -200px;
 
-  background: #7e22ce;
+  background: #c084fc;
   opacity: 0.2;
   filter: blur(225px);
   will-change: filter;

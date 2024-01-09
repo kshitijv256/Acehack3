@@ -5,11 +5,10 @@ import styled, { css } from "styled-components";
 import { Heading2, LargeBody } from "../../styles";
 
 export const AboutText =
-  "This September, join 1,000+ hackers from all around the world for a hackathon like no other. Discover a community of like-minded hackers, connect with world-class mentors, and build because you love to build. At Hack the North 10, you'll experience engaging workshops, exciting activities, and have the chance to network with the most exciting companies in tech – you're in for a great time. Not from Waterloo? We cover food, travel expenses, and lodging so you can focus on turning your ideas into reality.";
+  "This year, be part of an extraordinary gathering of 1,000+ innovators from around the nation. At AceHack 3.0, dive into a world of collaborative hacking, connect with industry-leading mentors, and build because you love to create. Experience riveting workshops, thrilling activities, and network with the most influential tech companies – it's an event you'll never forget. Coming from outside Jaipur? We've got you covered! Your food and lodging are on us, ensuring you focus solely on transforming your ideas into reality.";
 
 export const YouBelongText =
-  "Getting into tech can be hard. We're here to make that easier. Hack the North is dedicated to building an inclusive experience for attendees from across the globe. We strive to foster a space where everyone feels welcomed to pursue their dreams and create something they're proud of.";
-
+  "Join us for a 24-hour hackathon where creativity meets technology. Powered by UEM Jaipur ACM Student Chapter and Eduhub Community, this event is your platform to revolutionize India's present. Show off your ingenious ideas, compete with peers, and craft solutions for real-world issues. Get ready to innovate, collaborate, and ignite change!";
 interface BrowserProps {
   inView: boolean;
 }

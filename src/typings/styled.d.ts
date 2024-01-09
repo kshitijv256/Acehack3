@@ -23,6 +23,8 @@ declare module "styled-components" {
         cyan: string;
         blue: string;
         purple: string;
+        purpleDark: string;
+        purpleLight: string;
         pink: string;
         yellow: string;
         orange: string;
@@ -31,6 +33,8 @@ declare module "styled-components" {
         cyan: string;
         blue: string;
         purple: string;
+        purpleDark: string;
+        purpleLight: string;
         pink: string;
         yellow: string;
         orange: string;

@@ -30,8 +30,8 @@ const About: React.FC = () => {
         >
           <TextContainer>
             <ResponsiveH2>
-              {!useDeviceSize(499) && "Welcome to "}Canada&apos;s biggest
-              hackathon
+              {!useDeviceSize(499) && "Welcome to "}Jaipur&apos;s biggest
+              student run hackathon
             </ResponsiveH2>
             <ResponsiveLB>{AboutText}</ResponsiveLB>
           </TextContainer>
