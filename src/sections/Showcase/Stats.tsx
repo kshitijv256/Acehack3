@@ -156,7 +156,7 @@ const Stats: React.FC = () => {
         <E7Right draggable="false" alt="" loading="lazy" src={E7RightImg} />
         <Hackers
           draggable="false"
-          alt="1,100+ hackers"
+          alt="660+ hackers"
           loading="lazy"
           src={HackersImg}
           currState={lightState.includes(PanelIDs.HACKERS)}
@@ -168,7 +168,7 @@ const Stats: React.FC = () => {
         />
         <Countries
           draggable="false"
-          alt="17 countries"
+          alt="36 Hours"
           loading="lazy"
           src={CountriesImg}
           currState={lightState.includes(PanelIDs.COUNTRIES)}
@@ -204,7 +204,7 @@ const Stats: React.FC = () => {
         />
         <HoursTravelled
           draggable="false"
-          alt="15,000+ km traveled"
+          alt="3000+ Registrations"
           loading="lazy"
           src={HoursTravelledImg}
           currState={lightState.includes(PanelIDs.HOURSTRAVELLED)}
@@ -240,7 +240,7 @@ const Stats: React.FC = () => {
         />
         <Mentors
           draggable="false"
-          alt="110 mentors"
+          alt="30+ mentors"
           loading="lazy"
           src={MentorsImg}
           currState={lightState.includes(PanelIDs.MENTORS)}
@@ -252,7 +252,7 @@ const Stats: React.FC = () => {
         />
         <Projects
           draggable="false"
-          alt="220+ projects submitted"
+          alt="170+ projects submitted"
           loading="lazy"
           src={ProjectsImg}
           currState={lightState.includes(PanelIDs.PROJECTS)}
@@ -264,7 +264,7 @@ const Stats: React.FC = () => {
         />
         <Workshops
           draggable="false"
-          alt="26 workshops"
+          alt="10 workshops"
           loading="lazy"
           src={WorkshopsImg}
           currState={lightState.includes(PanelIDs.WORKSHOPS)}

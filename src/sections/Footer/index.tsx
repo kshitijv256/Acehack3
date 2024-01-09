@@ -491,7 +491,7 @@ const Footer: React.FC = () => {
 
   return (
     <SectionWrapper>
-      <YellowRect src={yellowRect} alt="yellow rectangle" />
+      {/* <YellowRect src={yellowRect} alt="yellow rectangle" />
       <YellowRect2 src={yellowRect2} alt="yellow rectangle" />
       <LongYellowRect src={longYellowRect} alt="long yellow rectangle" />
       <LongYellowRect2 src={longYellowRect2} alt="long yellow rectangle" />
@@ -502,9 +502,9 @@ const Footer: React.FC = () => {
       <LongGreenRect2 src={longGreenRect2} alt="long green rectangle" />
       <PinkRect src={pinkRect} alt="pink rectangle" />
       <LongPinkRect src={longPinKRect} alt="long pink rectangle" />
-      <MedPinkRect src={medPinkRect} alt="med pink rectangle" />
+      <MedPinkRect src={medPinkRect} alt="med pink rectangle" /> */}
       <OrganizerContentWrapper>
-        <LeftGrid>
+        {/* <LeftGrid>
           {firstHalf.map((organizer, i) => (
             <div
               key={i}
@@ -525,7 +525,7 @@ const Footer: React.FC = () => {
               />
             </div>
           ))}
-        </LeftGrid>
+        </LeftGrid> */}
         <div
           style={{
             display: "flex",
@@ -535,14 +535,14 @@ const Footer: React.FC = () => {
             gap: "50px",
           }}
         >
-          <FooterContainer>
+          {/* <FooterContainer>
             <FooterText>
               Made with 💙 in Waterloo, Ontario, Canada 🇨🇦
             </FooterText>
             <FooterText id="personal"></FooterText>
-          </FooterContainer>
+          </FooterContainer> */}
         </div>
-        <RightGrid>
+        {/* <RightGrid>
           {secondHalf.map((organizer, i) => (
             <div
               key={i}
@@ -563,14 +563,14 @@ const Footer: React.FC = () => {
               />
             </div>
           ))}
-        </RightGrid>
+        </RightGrid> */}
       </OrganizerContentWrapper>
       <BottomTextContainer>
-        <MinorBottomContainer>
+        {/* <MinorBottomContainer>
           <BottomText href="/code-of-conduct">Code of Conduct</BottomText>
           <BottomText href="/travel-guidelines">Travel Guidelines</BottomText>
           <BottomText href="/privacy">Privacy Policy</BottomText>
-        </MinorBottomContainer>
+        </MinorBottomContainer> */}
         <div>
           <CopyrightText style={{ color: `${theme.colors.text.dark.gray}` }}>
             Copyright © Techyon, 2023

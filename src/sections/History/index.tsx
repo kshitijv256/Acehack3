@@ -17,7 +17,7 @@ import { Heading1, LargeBody, LargeBodyBold } from "../../styles";
 import { Years, Year } from "./constants";
 
 const History: React.FC = () => {
-  const [folderOpenState, setFolderOpenState] = useState<Year>(Years[8]);
+  const [folderOpenState, setFolderOpenState] = useState<Year>(Years[1]);
 
   const theme = useTheme();
   const IsMobile = (pixels: number) => {
@@ -132,7 +132,9 @@ const History: React.FC = () => {
                     year={year}
                     isOpen={folderOpenState === year ? true : false}
                   />
-                  <FolderYear>{year.year}</FolderYear>
+                  <FolderYear>
+                    {year.year == "2022" ? "Acehack 1" : "Acehack 2"}
+                  </FolderYear>
                 </FolderWrapper>
               );
             })}
@@ -368,6 +370,7 @@ const FolderYear = styled(LargeBodyBold)`
   margin-top: 8px;
   line-height: 32px;
   user-select: none;
+  white-space: nowrap;
   color: ${({ theme }) => theme.colors.text.dark.white};
 `;
 

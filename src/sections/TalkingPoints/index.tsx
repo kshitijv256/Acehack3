@@ -13,8 +13,9 @@ import styled, { useTheme } from "styled-components";
 import Detail from "../../components/base/Detail";
 import { Heading1 } from "../../styles";
 
-import { TalkingPointsCopy } from "./constants";
+import { Tracks, TracksLeft, TracksRight } from "./constants";
 import Glitches from "./Glitches";
+import Prizes from "./Prizes";
 
 const TalkingPoints: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -30,7 +31,7 @@ const TalkingPoints: React.FC = () => {
   // flipping through talking points every 10 seconds
   useEffect(() => {
     const interval = setInterval(async () => {
-      if (selectedIndex == 2) {
+      if (selectedIndex == 7) {
         setSelectedIndex(0);
       } else {
         setSelectedIndex(selectedIndex + 1);
@@ -61,7 +62,11 @@ const TalkingPoints: React.FC = () => {
     }
   }, [sectionInView]);
 
-  const headerClicked = (index: number) => {
+  const headerClicked = (index: number, right?: boolean) => {
+    if (right) {
+      setSelectedIndex(index + 4);
+      return;
+    }
     setSelectedIndex(index);
   };
 
@@ -88,13 +93,12 @@ const TalkingPoints: React.FC = () => {
       >
         <HeadingContainer>
           <Heading1>
-            Celebrating our{" "}
-            <GlowText color={theme.colors.primary.cyan}>
-              10th iteration
-            </GlowText>
+            Tracks{" & "}
+            <GlowText color={theme.colors.primary.purple}>Prizes</GlowText>
           </Heading1>
         </HeadingContainer>
         <ContentSection ref={sectionRef}>
+          <Prizes />
           {isMedium ? (
             <div
               style={{
@@ -103,7 +107,7 @@ const TalkingPoints: React.FC = () => {
                 gap: isTablet ? (isMobile ? "0" : "24px") : "32px",
               }}
             >
-              <WindowWrapper glitching={glitching}>
+              {/* <WindowWrapper glitching={glitching}>
                 <div
                   onMouseEnter={() => {
                     setGlitching(true);
@@ -114,17 +118,17 @@ const TalkingPoints: React.FC = () => {
                     gradientEndColor={theme.colors.primary.purple}
                   >
                     <BrowserImage
-                      src={String(TalkingPointsCopy[selectedIndex].image)}
-                      alt={TalkingPointsCopy[selectedIndex].alt}
+                      src={String(Tracks[selectedIndex].image)}
+                      alt={Tracks[selectedIndex].alt}
                       loading="lazy"
                     />
                   </BrowserWindow>
                   <GradientBackground />
                 </div>
                 <Glitches glitchFrame={glitchFrame} glitching={glitching} />
-              </WindowWrapper>
+              </WindowWrapper> */}
               <TextWrapper>
-                {TalkingPointsCopy.map((talkingPoint, index) => {
+                {Tracks.map((talkingPoint, index) => {
                   return (
                     <Detail
                       key={index}
@@ -141,11 +145,11 @@ const TalkingPoints: React.FC = () => {
               </TextWrapper>
             </div>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 584px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 480px" }}>
               <TextWrapper>
                 {selectedIndex === 0 && <BlueStar src={StarBlueImg} alt="" />}
                 {selectedIndex === 1 && <PinkGear src={FushiaGear} alt="" />}
-                {TalkingPointsCopy.map((talkingPoint, index) => {
+                {TracksLeft.map((talkingPoint, index) => {
                   return (
                     <Detail
                       key={index}
@@ -160,7 +164,25 @@ const TalkingPoints: React.FC = () => {
                   );
                 })}
               </TextWrapper>
-              <WindowWrapper glitching={glitching}>
+              <TextWrapper>
+                {selectedIndex === 0 && <BlueStar src={StarBlueImg} alt="" />}
+                {selectedIndex === 1 && <PinkGear src={FushiaGear} alt="" />}
+                {TracksRight.map((talkingPoint, index) => {
+                  return (
+                    <Detail
+                      key={index}
+                      onClick={() => headerClicked(index, true)}
+                      index={index}
+                      header={talkingPoint.header}
+                      body={talkingPoint.body}
+                      clicked={selectedIndex === index + 4}
+                      color={talkingPoint.color}
+                      section="Talking Points"
+                    />
+                  );
+                })}
+              </TextWrapper>
+              {/* <WindowWrapper glitching={glitching}>
                 <div
                   onMouseEnter={() => {
                     setGlitching(true);
@@ -179,7 +201,7 @@ const TalkingPoints: React.FC = () => {
                   <GradientBackground />
                 </div>
                 <Glitches glitchFrame={glitchFrame} glitching={glitching} />
-              </WindowWrapper>
+              </WindowWrapper> */}
             </div>
           )}
         </ContentSection>
@@ -198,6 +220,7 @@ const HeadingContainer = styled.div`
 const ContentSection = styled.div`
   margin-top: 128px;
   display: flex;
+  flex-direction: column;
 
   ${mediaQueries.medium} {
     margin-top: 72px;

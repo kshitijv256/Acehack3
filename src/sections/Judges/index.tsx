@@ -245,18 +245,18 @@ const Judges: React.FC = () => {
             by industry leaders
           </JudgesHeading1>
           <JudgesSubtitle>
-            Every year, leaders in the tech industry join Hack the North to
-            speak, judge, and mentor hackers.
+            Every year, leaders in the tech industry join AceHack to speak,
+            judge, and mentor hackers.
           </JudgesSubtitle>
         </HeadingContainer>
         <BodyContainer>
-          <JudgesHeading2>Opening ceremony panelists</JudgesHeading2>
-          <SpeakersGrid />
+          {/* <JudgesHeading2>Opening ceremony panelists</JudgesHeading2>
+          <SpeakersGrid /> */}
           <JudgesHeading2>Judges</JudgesHeading2>
           <JudgesGrid />
         </BodyContainer>
       </JudgesContentWrapper>
-      <EngineeringContentWrapper>
+      {/* <EngineeringContentWrapper>
         <EngineeringContainer>
           <GooseWrapper>
             <Goose1 />
@@ -278,7 +278,7 @@ const Judges: React.FC = () => {
             </EngP>
           </EngineeringInfo>
         </EngineeringContainer>
-      </EngineeringContentWrapper>
+      </EngineeringContentWrapper> */}
     </JudgesSectionWrapper>
   );
 };

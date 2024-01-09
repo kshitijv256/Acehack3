@@ -34,9 +34,9 @@ const IndexPage: React.FC = () => (
     <Suspense fallback={<div />}>
       <Stories />
     </Suspense>
-    <Suspense fallback={<div />}>
+    {/* <Suspense fallback={<div />}>
       <Judges />
-    </Suspense>
+    </Suspense> */}
     <Suspense fallback={<div />}>
       <Sponsors />
     </Suspense>

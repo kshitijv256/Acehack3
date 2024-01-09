@@ -79,7 +79,7 @@ const FAQ: React.FC = () => {
         <Wrapper>
           <HeadingContainer>
             <Heading1 style={{ left: 0 }}>
-              <GlowText color={theme.colors.primary.orange}>
+              <GlowText color={theme.colors.primary.purpleLight}>
                 Frequently{" "}
               </GlowText>
               asked questions
@@ -87,142 +87,21 @@ const FAQ: React.FC = () => {
           </HeadingContainer>
           <AccordionWrapper>
             <StyledAccordionGroup
-              questionSet={LEFT_QUESTION_SET.map((cur) =>
-                cur.question ==
-                "I’m not currently enrolled as a student, can I still attend Hack the North?"
-                  ? {
-                      question: cur.question,
-                      answer: (
-                        <p>
-                          Hack the North is geared towards students who are
-                          interested in tech, but we also want to open the doors
-                          for anyone who wants to learn. If your situation falls
-                          within this category, please reach out to us at{" "}
-                          <InternalLink
-                            tw="text-white underline"
-                            href="mailto:hello@hackthenorth.com"
-                          >
-                            hello@hackthenorth.com
-                          </InternalLink>{" "}
-                          and we can chat more regarding certain exemptions!
-                        </p>
-                      ),
-                    }
-                  : cur.question ==
-                    "What kind of workshops, talks, and activities will there be?"
-                  ? {
-                      question: cur.question,
-                      answer: (
-                        <>
-                          <p>
-                            Previously, we’ve held workshops and talks for a
-                            range of skill levels from beginner to advanced like
-                            Intro to React and Exploring and Wrangling Data with
-                            Pandas. Other workshops also explore various
-                            programming tools such as APIs, databases, and
-                            platforms.
-                          </p>
-                          <p>
-                            Activities like VR demos, meetups, and even karaoke
-                            happen throughout the weekend. Whether it’s for
-                            relaxation or health, novelty or competition, our
-                            team has something exciting prepared for you to
-                            enjoy!
-                          </p>
-                        </>
-                      ),
-                    }
-                  : {
-                      question: cur.question,
-                      answer: <p>{cur.answer}</p>,
-                    }
-              )}
+              questionSet={LEFT_QUESTION_SET.map((cur) => {
+                return {
+                  question: cur.question,
+                  answer: <p>{cur.answer}</p>,
+                };
+              })}
             />
             <StyledAccordionGroup
               shouldOpenFirst={!isTabletOrSmaller}
-              questionSet={RIGHT_QUESTION_SET.map((cur) =>
-                cur.question ==
-                "What if I need to travel internationally to attend Hack the North?"
-                  ? {
-                      question: cur.question,
-                      answer: (
-                        <>
-                          <p>
-                            Please note that visitor visa wait times may be as
-                            long as several months, depending on the country of
-                            departure. We recommend you apply for your visa, if
-                            required, immediately after receiving your
-                            acceptance to Hack the North. More information can
-                            be found on our{" "}
-                            <InternalLink
-                              tw="text-white underline"
-                              href="/travel-guidelines"
-                            >
-                              Travel Guidelines
-                            </InternalLink>{" "}
-                            page.
-                          </p>
-                          <p>
-                            COVID-19: If you’re traveling to Hack the North from
-                            outside of Canada, you must follow the{" "}
-                            <InternalLink
-                              tw="text-white underline"
-                              href="https://travel.gc.ca/travel-covid"
-                              target="_blank"
-                              // eslint-disable-next-line react/jsx-no-duplicate-props
-                              rel="noreferrer"
-                            >
-                              Government of Canada’s travel guidelines
-                            </InternalLink>{" "}
-                            in order to attend. As of June 2023, the guidelines
-                            do not require any sort of pre-flight testing or
-                            proof of vaccination. However, please ensure that
-                            you are fully compliant with your home country’s
-                            COVID-19 guidelines in order to ensure a smooth
-                            trip. Hack the North will not reimburse any
-                            additional fees that event attendees incur due to
-                            COVID-19 related complications.
-                          </p>
-                        </>
-                      ),
-                    }
-                  : cur.question == "What are your COVID-19 regulations?"
-                  ? {
-                      question: cur.question,
-                      answer: (
-                        <>
-                          <p>
-                            At this time, Hack the North does not have a
-                            COVID-19 policy. Taking your own health/safety
-                            precautions is recommended, but attendance at Hack
-                            the North is at your own risk.
-                          </p>
-                          <p>
-                            Following the Government of Canada’s decision to
-                            remove all COVID-19 travel restrictions, Hack the
-                            North will not be enforcing any COVID-related
-                            restrictions or regulations at our event. In the
-                            event that the COVID-19 situation changes in our
-                            region, we will follow the Canadian and Ontario
-                            government guidelines and restrictions as necessary.
-                          </p>
-                          <p>
-                            A small reserve of masks, hand sanitizer, and rapid
-                            tests will be available at the event.
-                          </p>
-                          <p>
-                            We kindly ask that if you are feeling unwell, please
-                            do not attend the event for the safety of other
-                            hackers and guests.
-                          </p>
-                        </>
-                      ),
-                    }
-                  : {
-                      question: cur.question,
-                      answer: <p>{cur.answer}</p>,
-                    }
-              )}
+              questionSet={RIGHT_QUESTION_SET.map((cur) => {
+                return {
+                  question: cur.question,
+                  answer: <p>{cur.answer}</p>,
+                };
+              })}
             />
           </AccordionWrapper>
         </Wrapper>
