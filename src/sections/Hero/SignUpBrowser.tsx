@@ -27,7 +27,7 @@ const SignUpBrowser: React.FC = () => {
           </TextContainer>
           <UnstyledLink
             newTab={true}
-            href="mailto:sponsorship@hackthenorth.com"
+            href="https://drive.google.com/file/d/1Wl2124ChuDGRy0FVs6JtzwBqq7w6EJ_X/view?usp=sharing"
             onClick={
               () => trackGoal("DDFIB6DS", 0) // Sign Up: Clicked Email Contact
             }
@@ -39,7 +39,7 @@ const SignUpBrowser: React.FC = () => {
           </UnstyledLink>
           <UnstyledLink
             newTab={true}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc0eogd8Hix599Ar0QTDpmKu7cg46fiTUkQqhj3HZDlrLH26w/viewform"
+            href="mailto:acehack@eduhubcommunity.tech"
             style={{
               marginTop: "4px",
             }}

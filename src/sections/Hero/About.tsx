@@ -15,6 +15,8 @@ import {
   ResponsiveH2,
   ResponsiveLB,
   GradientOverlay,
+  AboutACM,
+  AboutEduhub,
 } from "./Constants";
 
 const About: React.FC = () => {
@@ -40,42 +42,32 @@ const About: React.FC = () => {
       <ImagesContainer>
         <PopUpWrapper1 inView={isInView}>
           <ImgContainer1>
-            <BrowserWindow
-              gradientStartColor={theme.colors.primary.cyan}
-              gradientEndColor={theme.colors.primary.blue}
+            <BrowserWindowGradient
+              gradientStartColor={theme.colors.primary.blue}
+              gradientEndColor={theme.colors.primary.purple}
             >
-              <div style={{ position: "relative" }}>
-                <GradientOverlay
-                  gradientStartColor={theme.colors.primary.cyan}
-                  gradientEndColor={theme.colors.primary.blue}
-                />
-                <Img1
-                  src={About1}
-                  alt="Hacker in blue shirt eating"
-                  loading="lazy"
-                />
-              </div>
-            </BrowserWindow>
+              <TextContainer style={{ width: "440px" }}>
+                <ResponsiveH2>
+                  {!useDeviceSize(499) && "About "}ACM Student Chapter
+                </ResponsiveH2>
+                <ResponsiveLB>{AboutACM}</ResponsiveLB>
+              </TextContainer>
+            </BrowserWindowGradient>
           </ImgContainer1>
         </PopUpWrapper1>
         <PopUpWrapper2 inView={isInView}>
           <ImgContainer2>
-            <BrowserWindow
-              gradientStartColor={theme.colors.primary.orange}
-              gradientEndColor={theme.colors.primary.pink}
+            <BrowserWindowGradient
+              gradientStartColor={theme.colors.primary.blue}
+              gradientEndColor={theme.colors.primary.purple}
             >
-              <div style={{ position: "relative" }}>
-                <GradientOverlay
-                  gradientStartColor={theme.colors.primary.orange}
-                  gradientEndColor={theme.colors.primary.pink}
-                />
-                <Img2
-                  src={About2}
-                  alt="A group of hackers celebrating a tall tower of plastic cups"
-                  loading="lazy"
-                />
-              </div>
-            </BrowserWindow>
+              <TextContainer style={{ width: "440px" }}>
+                <ResponsiveH2>
+                  {!useDeviceSize(499) && "About "}Eduhub Community
+                </ResponsiveH2>
+                <ResponsiveLB>{AboutEduhub}</ResponsiveLB>
+              </TextContainer>
+            </BrowserWindowGradient>
           </ImgContainer2>
         </PopUpWrapper2>
       </ImagesContainer>
@@ -138,7 +130,7 @@ const ImagesContainer = styled(Column)`
 
 const ImgContainer1 = styled(ImgContainer)`
   bottom: 15px;
-  right: 40px;
+  right: 30px;
   @media (max-width: 1205px) {
     bottom: 30px;
     right: 60px;

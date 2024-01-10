@@ -3,20 +3,6 @@ import {
   Year2014AltImg,
   Year2015Img,
   Year2015AltImg,
-  Year2016Img,
-  Year2016AltImg,
-  Year2017Img,
-  Year2017AltImg,
-  Year2018Img,
-  Year2018AltImg,
-  Year2019Img,
-  Year2019AltImg,
-  Year2020Img,
-  Year2020AltImg,
-  Year2021Img,
-  Year2021AltImg,
-  Year2022Img,
-  Year2022AltImg,
 } from "src/assets/img";
 
 import { theme } from "../../styles";

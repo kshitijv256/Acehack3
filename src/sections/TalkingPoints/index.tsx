@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FushiaGear, StarBlueImg } from "src/assets/img";
-import {
-  BrowserWindow,
-  ContentWrapper,
-  SectionWrapper,
-} from "src/components/base";
+import { ContentWrapper, SectionWrapper } from "src/components/base";
 import GlowText from "src/components/base/GlowText";
 import { SectionId } from "src/constants";
 import { mediaQueries, useDeviceSize, useWindowSize } from "src/utils";
@@ -15,7 +11,7 @@ import Detail from "../../components/base/Detail";
 import { Heading1 } from "../../styles";
 
 import { Tracks, TracksLeft, TracksRight } from "./constants";
-import Glitches from "./Glitches";
+// import Glitches from "./Glitches";
 import Prizes from "./Prizes";
 
 const TalkingPoints: React.FC = () => {

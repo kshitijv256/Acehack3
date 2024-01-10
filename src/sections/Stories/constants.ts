@@ -11,35 +11,35 @@ interface Story {
 
 export const HackerTestimonialsCopy: Story[] = [
   {
-    name: "Lucas Mannarino, Beginner Hacker",
+    name: "Muskan Yadav, Winner of AceHack 2.0",
     testimonial:
-      "Three Brazilian medical students with zero coding experience walk into a bar… One says to the others “We should program something!” — no, this is not a joke. It’s actually how I and my friends ended up participating in HackTheNorth 2022. Our journey went from learning how to download and run Python, all the way to coding a working program with two NLPs (with the help of some amazing people and APIs, of course), all during three [very intense] days of the event!",
+      "Coming from Delhi, I have found the AceHack 2.0 to be a wonderful  and collaborative meeting that I have never seen before. It has allowed me to meet some amazing people. These have been some of my most rewarding experiences where IT Engineers have gathered in the same room preparing to contribute to the Core activities. With this I have learned and shared a lot of technical skills and learned some of the best ways on how to be more involved.",
     image: LucasImg,
-    alt: "Hacker story image for Lucas",
+    alt: "Hacker story image for Muskan",
     color: theme.colors.primary.cyan,
   },
   {
-    name: "Arianne Ghislaine, Beginner Hacker",
+    name: "Subham Sinha, Beginner Hacker",
     testimonial:
-      "Hack the North was an unforgettable experience, providing me with incredible access to resources and connections that I would never have been able to acquire on my own. Collaborating with individuals from diverse backgrounds and skill sets was enriching, and learning from experienced mentors and industry leaders was invaluable. Working on a project and receiving feedback from professionals allowed me to take my skills to the next level, giving me the confidence to tackle even more ambitious projects in the future. Overall, Hack the North was truly transformative, and I'm excited to see where these connections and skills will take me next!",
+      "First and foremost, I would like to say a big thank you to the entire AceHack team for the great organization and success of this AceHack 2.0. The organization has been great in sharing, developing and deepening experiences. We hope to see more of these Hackathons as they really allow people to know the deepen their knowledge. I am very happy to share this great experience with the community.",
     image: ArianneImg,
-    alt: "Hacker story image for Arianne",
+    alt: "Hacker story image for subham",
     color: theme.colors.primary.pink,
   },
   {
-    name: "Derrick Ha, Beginner Hacker",
+    name: "Dhruv Vyas, Beginner Hacker",
     testimonial:
-      "Hack the North was an absolute blast. Working on my project alongside my team was super fun, and I learned so much from the various workshops offered. While learning new concepts from React to web3 was fun, the things I’ll remember for the longest will be the funny moments I shared with other hackers. E7 was one of the coolest buildings I’ve ever been in, the place where the most shenanigans happened. Fun activities such as late night poutine & socials made for funny moments, such as spilling ramen all over my white shirt and then taking a late night walk at 4AM with my new friends from the hackathon. Overall, this experience taught me so much especially as a high school student, and I would wholeheartedly recommend applying for this year’s iteration!",
+      "I am happy to have been able to take part in this Hackathon at  University of Engineering & Management, Jaipur. I met new people and learned a lot many things . Thank you for this opportunity. I will speak to my community about everything I’ve learned.",
     image: DerrickImg,
-    alt: "Hacker story image for Derrick",
+    alt: "Hacker story image for Dhruv",
     color: theme.colors.primary.orange,
   },
   {
-    name: "Jaival Patel, Experienced Hacker",
+    name: "Khushi Khandelwal, Beginner Hacker",
     testimonial:
-      "My recent memorable moment is when I became a finalist at Hack The North last year. As my group and I were presenting our web3 investment platform, two out of the three judges were confused about our project. However, the third judge absolutely loved our project. While my group and I were mourning about how “bad” our presentation was at lunch, one of the judges from the panel came up to us and said “Congratulations.” At first, my group and I were confused. A few hours later, my teammate got a call from Hack The North saying we became finalists! This moment was the happiest moment of our lives as we were preparing for Hack The North for over a year to present in front of all of the University of Waterloo. After our presentation in the closing ceremonies, all of the judges once again congratulated us. Our project gaining so much attention opened a wide range of opportunities in the tech industry, and was a massive inspiration for us to keep innovating for society!",
+      "I am a fellow from University of Engineering & Management, Jaipur . The Hackathon was a very exceptional experience for me. This Hackathon is a synthesis of skills (System, Network and Programming). The workshop has helped me to learn and understand Software-defined storage as well as various tools to help network virtualization and deployment.",
     image: JaivalImg,
-    alt: "Hacker story image for Jaival",
+    alt: "Hacker story image for Khushi",
     color: theme.colors.primary.yellow,
   },
 ];

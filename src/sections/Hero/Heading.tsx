@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TextLoop from "react-text-loop";
 import {
-  MLHLogo,
   Left1,
   Left2,
   Left3,
