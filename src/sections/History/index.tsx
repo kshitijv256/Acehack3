@@ -112,14 +112,6 @@ const History: React.FC = () => {
             <GlowText color={theme.colors.primary.pink}>history</GlowText>
           </StyledHeading1>
         </HeadingContainer>
-        <SubHeadingContainer>
-          <SubHeading>
-            Hack the North hits double digits! In 2023, we&apos;re celebrating
-            the 10th Hack the North.{!isTablet && <br />}
-            {isTablet && " "}
-            Let&apos;s look back at some highlights from past events:
-          </SubHeading>
-        </SubHeadingContainer>
         <ContentContainer>
           <YearContainer>
             <YearContainerBackground />

@@ -78,11 +78,6 @@ const Stories: React.FC = () => {
             memories
           </Heading1>
         </HeadingContainer>
-        <SubHeading>
-          Since 2014, Hack the North has empowered students of all levels to
-          take their ideas to the next level by fostering a community of
-          learning, mentorship, and fun.
-        </SubHeading>
         <ContentSection ref={sectionRef}>
           {isMedium ? (
             <div
