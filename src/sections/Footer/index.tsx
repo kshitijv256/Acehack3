@@ -568,7 +568,11 @@ const Footer: React.FC = () => {
             }}
           >
             Made by
-            <StyledLink href="https://github.com/kshitijv256/" target="_blank">
+            <StyledLink
+              href="https://github.com/kshitijv256/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Kshitij Verma
             </StyledLink>
           </p>
