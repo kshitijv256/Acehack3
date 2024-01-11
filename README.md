@@ -4,7 +4,7 @@
 
 ### License
 
-Our code is licensed under the MIT license. All other assets are copyright of Hack the North.
+Our code is licensed under the MIT license. All other assets are copyright of Acehack.
 
 ### Cheers
 
