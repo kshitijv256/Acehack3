@@ -1,6 +1,6 @@
 ### Check it out
 
-👉👉👉 [AceHack 3.0](https://2023.hackthenorth.com/) 👈👈👈
+👉👉👉 [AceHack 3.0](https://acehack3.netlify.app/) 👈👈👈
 
 ### License
 
