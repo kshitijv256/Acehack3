@@ -551,14 +551,7 @@ const Footer: React.FC = () => {
           <BottomText href="/travel-guidelines">Travel Guidelines</BottomText>
           <BottomText href="/privacy">Privacy Policy</BottomText>
         </MinorBottomContainer> */}
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
+        <FooterInfo>
           <CopyrightText style={{ color: `${theme.colors.text.dark.gray}` }}>
             Copyright © Acehack, 2024
           </CopyrightText>
@@ -576,13 +569,27 @@ const Footer: React.FC = () => {
               Kshitij Verma
             </StyledLink>
           </p>
-        </div>
+        </FooterInfo>
       </BottomTextContainer>
     </SectionWrapper>
   );
 };
 
 export default Footer;
+
+const FooterInfo = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  ${mediaQueries.custom(768)} {
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+`;
 
 const StyledLink = styled.a`
   padding: 0px 20px 10px 10px;

@@ -131,6 +131,7 @@ const ImagesContainer = styled(Column)`
 const ImgContainer1 = styled(ImgContainer)`
   bottom: 15px;
   right: 30px;
+  max-width: 100%;
   @media (max-width: 1205px) {
     bottom: 30px;
     right: 60px;
@@ -148,6 +149,7 @@ const ImgContainer1 = styled(ImgContainer)`
 const ImgContainer2 = styled(ImgContainer)`
   bottom: 60px;
   left: 90px;
+  max-width: 100%;
   @media (max-width: 1205px) {
     bottom: 70px;
     left: 30px;
