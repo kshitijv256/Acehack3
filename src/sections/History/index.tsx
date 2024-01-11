@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import React, { useState } from "react";
 import { ContentWrapper, SectionWrapper } from "src/components/base";
 import {
@@ -33,7 +32,6 @@ const History: React.FC = () => {
 
   const handleFolderClick = (folder: Year) => {
     setFolderOpenState(folder);
-    trackGoal(folder.fathomEventCode, 0); // History: 20XX Folder Click
   };
 
   const ImageWindow: React.FC<ImageWindowProps> = ({
@@ -67,6 +65,7 @@ const History: React.FC = () => {
   const TextWindow: React.FC<TextWindowProps> = ({
     gradientStartColor,
     gradientEndColor,
+    title,
     year,
     description,
     top,
@@ -82,19 +81,21 @@ const History: React.FC = () => {
           >
             <BrowserTextContainer>
               <LargeBodyBold style={{ color: theme.colors.text.dark.white }}>
-                ► {year}
+                ► {title}
               </LargeBodyBold>
-              <LargeBody style={{ color: theme.colors.text.dark.gray }}>
-                {description[0]}
-              </LargeBody>
-              <LargeBody
-                style={{
-                  color: theme.colors.text.dark.gray,
-                  marginTop: "-16px",
-                }}
-              >
-                {description[1]}
-              </LargeBody>
+              {description.map((paragraph, index) => {
+                return (
+                  <LargeBody
+                    key={index}
+                    style={{
+                      color: theme.colors.text.dark.gray,
+                      marginTop: index === 0 ? "0px" : "-14px",
+                    }}
+                  >
+                    {paragraph}
+                  </LargeBody>
+                );
+              })}
             </BrowserTextContainer>
           </BrowserWindowGradient>
         </WindowAnimation>
@@ -144,6 +145,7 @@ const History: React.FC = () => {
               gradientStartColor={folderOpenState.gradientStart}
               gradientEndColor={folderOpenState.gradientEnd}
               year={folderOpenState.year}
+              title={folderOpenState.title}
               description={folderOpenState.description}
               top={
                 isMobile
@@ -388,6 +390,7 @@ interface PositionProps {
 type TextWindowProps = GradientProps &
   PositionProps & {
     year: string;
+    title?: string;
     description: string[];
   };
 

@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import React from "react";
 import { MailingListSignup } from "src/components";
 import { Icon } from "src/components/base";
@@ -79,7 +78,7 @@ const DidWeMissAnything: React.FC = () => {
         <StyledLink
           href="acehack@eduhubcommunity.tech"
           onClick={
-            () => trackGoal("DDFIB6DS", 0) // Sign Up: Clicked Email Contact
+            () => {} // Sign Up: Clicked Email Contact
           }
         >
           acehack@eduhubcommunity.tech
@@ -89,20 +88,18 @@ const DidWeMissAnything: React.FC = () => {
         </span>
       </SubtextWrapper>
       <SocialsWrapper>
-        {Object.entries(SOCIALS).map(
-          ([id, { icon, link, fathomEventCode }]) => (
-            <a
-              key={id}
-              href={link}
-              aria-label={id}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => trackGoal(fathomEventCode, 0)}
-            >
-              <Icon name={icon} width={24} height={24} hover={true} />
-            </a>
-          )
-        )}
+        {Object.entries(SOCIALS).map(([id, { icon, link }]) => (
+          <a
+            key={id}
+            href={link}
+            aria-label={id}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {}}
+          >
+            <Icon name={icon} width={24} height={24} hover={true} />
+          </a>
+        ))}
       </SocialsWrapper>
       {/* <MailingListSignup
         placeholder={

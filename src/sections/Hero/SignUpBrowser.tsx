@@ -1,8 +1,5 @@
-import { trackGoal } from "fathom-client";
 import React from "react";
-import { MailingListSignupHero } from "src/components";
 import { UnstyledLink, BrowserWindowGradient } from "src/components/base";
-import Button from "src/components/base/Button";
 import { mediaQueries } from "src/utils/responsive";
 import styled, { useTheme } from "styled-components";
 
@@ -29,7 +26,7 @@ const SignUpBrowser: React.FC = () => {
             newTab={true}
             href="https://drive.google.com/file/d/1Wl2124ChuDGRy0FVs6JtzwBqq7w6EJ_X/view?usp=sharing"
             onClick={
-              () => trackGoal("DDFIB6DS", 0) // Sign Up: Clicked Email Contact
+              () => {} // Sign Up: Clicked Email Contact
             }
             style={{
               marginTop: "24px",

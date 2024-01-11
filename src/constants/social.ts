@@ -2,48 +2,36 @@ import { IconName } from "src/components/base/Icon";
 
 export enum SocialPlatforms {
   INSTA = "Instagram",
-  FACEBOOK = "Facebook",
   TWITTER = "Twitter",
   LINKEDIN = "LinkedIn",
-  TIKTOK = "TikTok",
+  DISCORD = "Discord",
   MEDIUM = "Medium",
 }
 
 type TSocialInfo = {
   icon: IconName;
   link: string;
-  fathomEventCode: string;
 };
 
 export const SOCIALS: Record<SocialPlatforms, TSocialInfo> = {
   [SocialPlatforms.INSTA]: {
     icon: "instagram",
-    link: "https://www.instagram.com/hackthenorth",
-    fathomEventCode: "LX6A0MAL",
+    link: "https://www.instagram.com/acehack3.0/",
   },
   [SocialPlatforms.TWITTER]: {
     icon: "twitter",
-    link: "https://twitter.com/hackthenorth",
-    fathomEventCode: "XMBYPYVQ",
-  },
-  [SocialPlatforms.FACEBOOK]: {
-    icon: "facebook",
-    link: "https://www.facebook.com/hackthenorth/",
-    fathomEventCode: "N8KZMCWY",
+    link: "https://twitter.com/AceHack_uemj",
   },
   [SocialPlatforms.LINKEDIN]: {
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/hack-the-north",
-    fathomEventCode: "3ADUIO8D",
+    link: "https://www.linkedin.com/company/acehack-2-0/",
   },
-  [SocialPlatforms.TIKTOK]: {
-    icon: "tiktok",
-    link: "https://www.tiktok.com/@hackthenorth",
-    fathomEventCode: "YF125KX9",
+  [SocialPlatforms.DISCORD]: {
+    icon: "discord",
+    link: "https://discord.com/invite/RyUs94pSNT",
   },
   [SocialPlatforms.MEDIUM]: {
     icon: "medium",
-    link: "https://hackthenorth.medium.com/",
-    fathomEventCode: "K5RP1B2Z",
+    link: "https://medium.com/@AceHack2.0",
   },
 };

@@ -1,7 +1,7 @@
 import { motion, useCycle } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import "styled-components/macro";
-import { LogoIcon } from "src/assets/icons";
+import { logoImg } from "src/assets/img";
 import { SectionId } from "src/constants";
 import { mediaQueries, useDeviceSize } from "src/utils";
 import {
@@ -66,7 +66,7 @@ const Navbar: React.FC<NavBarProps> = ({ notMainPage }) => {
           style={{ marginLeft: isMediumOrSmaller ? "24px" : "0px" }}
         >
           <a href={`/#${SectionId.HERO}`} aria-label="Home">
-            <LogoIcon />
+            <img src={logoImg} alt="Acehack Logo" tw="h-36" draggable="false" />
           </a>
         </div>
 

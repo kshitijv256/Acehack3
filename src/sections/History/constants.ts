@@ -28,6 +28,7 @@ interface YearImage {
 
 export interface Year {
   year: string;
+  title?: string;
   gradientStart: string;
   gradientEnd: string;
   description: string[];
@@ -45,16 +46,18 @@ export interface Year {
   };
   order: number;
   images: YearImage[];
-  fathomEventCode: string;
 }
 
 const _2022: Year = {
   year: "2022",
+  title: "AceHack 1.0",
   gradientStart: theme.colors.primary.cyan,
   gradientEnd: theme.colors.primary.blue,
   description: [
-    "Hack the North is founded by a group of undergraduate students at the University of Waterloo in Ontario, Canada. Thank you for 10 years of memories 💙",
-    "Keynote Speakers: Chamath Palihapitiya, Jason Calacanis, & Sam Altman",
+    "Eduhub community along with ACM-UEMJ organized AceHack 1.0",
+    "First ever hackathon on this scale in the region",
+    "12 hours of hacking with over 500 hackers",
+    "₹20,000 of cash prizes",
   ],
   top: {
     isMobile: "180px",
@@ -107,16 +110,17 @@ const _2022: Year = {
       alt: "A wide shot of the University of Waterloo’s E7 Building with a large banner which reads “Hack the North” strung up above the entryway",
     },
   ],
-  fathomEventCode: "SEYHNZIH",
 };
 
 const _2023: Year = {
   year: "2023",
+  title: "AceHack 2.0",
   gradientStart: theme.colors.primary.pink,
   gradientEnd: theme.colors.primary.purple,
   description: [
-    "All workshops opened to the public",
-    "Video messages from Sal Khan, Alexis Ohanian, Chris Hadfield",
+    "Held at a much grander scale than previous year",
+    "24 hours of hacking with over 1,000 hackers",
+    "₹75,000 of cash prizes",
   ],
   top: {
     isMobile: "220px",
@@ -170,7 +174,6 @@ const _2023: Year = {
       alt: "A therapy dog bows its head as a group of three hackers smile and pet it",
     },
   ],
-  fathomEventCode: "BGSG89S1",
 };
 
 export const Years = [_2022, _2023];

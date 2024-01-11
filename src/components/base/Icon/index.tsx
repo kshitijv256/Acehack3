@@ -6,20 +6,18 @@ import {
   // CheckmarkIcon,
   // CopyrightIcon,
   // ExpandIcon,
-  FacebookIcon,
   // ForwardIcon,
   InstagramIcon,
   LinkedinIcon,
   MediumIcon,
   PlayIcon,
   // SendIcon,
-  TikTokIcon,
+  DiscordIcon,
   TwitterIcon,
-  FacebookHoverIcon,
   InstagramHoverIcon,
   LinkedinHoverIcon,
   MediumHoverIcon,
-  TikTokHoverIcon,
+  DiscordHoverIcon,
   TwitterHoverIcon,
   // LogoIconDarkIcon,
   // CrossIcon,
@@ -33,14 +31,14 @@ export type IconName =
   // | "checkmark"
   // | "copyright"
   // | "expand"
-  | "facebook"
+  | "discord"
   // | "forward"
   | "instagram"
   | "linkedin"
   | "medium"
   | "play"
   // | "send"
-  | "tiktok"
+  | "discord"
   | "twitter";
 // | "logo"
 // | "cross"
@@ -63,14 +61,13 @@ const NAME_TO_ICON_MAP: Record<IconName, string> = {
   // checkmark: CheckmarkIcon,
   // copyright: CopyrightIcon,
   // expand: ExpandIcon,
-  facebook: FacebookIcon,
   // forward: ForwardIcon,
   instagram: InstagramIcon,
   linkedin: LinkedinIcon,
   medium: MediumIcon,
   play: PlayIcon,
   // send: SendIcon,
-  tiktok: TikTokIcon,
+  discord: DiscordIcon,
   twitter: TwitterIcon,
   // logo: LogoIconDarkIcon,
   // cross: CrossIcon,
@@ -84,14 +81,13 @@ const NAME_TO_HOVER_ICON_MAP: Record<IconName, string> = {
   // checkmark: CheckmarkIcon,
   // copyright: CopyrightIcon,
   // expand: ExpandIcon,
-  facebook: FacebookHoverIcon,
   // forward: ForwardIcon,
   instagram: InstagramHoverIcon,
   linkedin: LinkedinHoverIcon,
   medium: MediumHoverIcon,
   play: PlayIcon,
   // send: SendIcon,
-  tiktok: TikTokHoverIcon,
+  discord: DiscordHoverIcon,
   twitter: TwitterHoverIcon,
   // logo: LogoIconDarkIcon,
   // cross: CrossIcon,

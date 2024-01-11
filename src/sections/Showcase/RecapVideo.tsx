@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import { CloseIconImg } from "src/assets/img";
@@ -237,7 +236,6 @@ const RecapVideo: React.FC<RecapVideoProps> = ({
         ref={ref}
         onClick={() => {
           setIsModalOpen(true);
-          trackGoal("VV9YRQTS", 0); // Showcase: YT Video Click
         }}
       >
         <VideoContainer ref={containerRef}>
@@ -261,7 +259,6 @@ const RecapVideo: React.FC<RecapVideoProps> = ({
         <PlayButtonContainer
           onClick={() => {
             setIsModalOpen(true);
-            trackGoal("VV9YRQTS", 0); // Showcase: YT Video Click
           }}
         >
           <PlayButton />

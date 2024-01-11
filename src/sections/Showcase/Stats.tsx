@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import {
@@ -279,7 +278,6 @@ const Stats: React.FC = () => {
           hovered={hoveredLight == PanelIDs.YTVIDEO}
           onMouseEnter={() => {
             handleMouseOver(PanelIDs.YTVIDEO);
-            trackGoal("SJAWFWNW", 0); // Showcase: YT Video Hover
           }}
           onMouseOut={() => handleMouseOut()}
           animDone={animDone}

@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import React, { useState, useMemo, useCallback, FormEvent } from "react";
 import Spinner from "src/components/Spinner";
 import { BodyBold, Body } from "src/styles";
@@ -50,20 +49,16 @@ const MailingListSignup: React.FC<MailingListSignupProps> = ({
             if (alreadySignup) {
               updateSignUpState(SignUpState.DUPLICATE);
               setHasErrors(true);
-              trackGoal("2EGFUOVZ", 0); // Sign Up: Duplicate
             } else {
               updateSignUpState(SignUpState.SUBMITTED);
-              trackGoal("O8XQVCWX", 0); // Sign Up: Success
             }
           })
           .catch(() => {
             updateSignUpState(SignUpState.ERROR);
-            trackGoal("8MVEHSYT", 0); // Sign Up: Error
           });
       } else {
         updateSignUpState(SignUpState.INVALID);
         setHasErrors(true);
-        trackGoal("4PKQESPT", 0); // Sign Up: Invalid
       }
     },
     [email]

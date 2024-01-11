@@ -1,18 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  blueRect,
-  greenRect,
-  longGreenRect,
-  longGreenRect2,
-  longPinKRect,
-  longYellowRect,
-  longYellowRect2,
-  medPinkRect,
-  medYellowRect,
-  pinkRect,
-  yellowRect,
-  yellowRect2,
-} from "src/assets/img";
+import { ACMImg, UemImg } from "src/assets/img";
 import { ContentWrapper, SectionWrapper } from "src/components/base";
 import { ORGANIZERS } from "src/copy/organizers";
 import { LargeBodyBold, theme } from "src/styles";
@@ -71,20 +58,9 @@ const LeftGrid = styled.div`
 
 const OrganizerImg = styled.img`
   z-index: 100;
-  width: 45px;
-  height: 45px;
+  height: 72px;
   border: 2.28463px solid #ffffff;
   object-fit: cover;
-
-  ${mediaQueries.medium} {
-    width: 40px;
-    height: 40px;
-  }
-
-  ${mediaQueries.largeMobile} {
-    width: 35px;
-    height: 35px;
-  }
 `;
 
 const RightGrid = styled.div`
@@ -485,9 +461,9 @@ const Footer: React.FC = () => {
     }
   }
 
-  const HALF_ORGANIZERS = ORGANIZERS.length / 2;
-  const firstHalf = ORGANIZERS.slice(0, HALF_ORGANIZERS);
-  const secondHalf = ORGANIZERS.slice(HALF_ORGANIZERS, ORGANIZERS.length);
+  // const HALF_ORGANIZERS = ORGANIZERS.length / 2;
+  // const firstHalf = ORGANIZERS.slice(0, HALF_ORGANIZERS);
+  // const secondHalf = ORGANIZERS.slice(HALF_ORGANIZERS, ORGANIZERS.length);
 
   return (
     <SectionWrapper>
@@ -565,18 +541,38 @@ const Footer: React.FC = () => {
           ))}
         </RightGrid> */}
       </OrganizerContentWrapper>
+      <OrganizersContainer>
+        <OrganizerImg src={ACMImg} alt="Kshitij Verma" loading="lazy" />
+        <OrganizerImg src={UemImg} alt="Kshitij Verma" loading="lazy" />
+      </OrganizersContainer>
       <BottomTextContainer>
         {/* <MinorBottomContainer>
           <BottomText href="/code-of-conduct">Code of Conduct</BottomText>
           <BottomText href="/travel-guidelines">Travel Guidelines</BottomText>
           <BottomText href="/privacy">Privacy Policy</BottomText>
         </MinorBottomContainer> */}
-        <div>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <CopyrightText style={{ color: `${theme.colors.text.dark.gray}` }}>
             Copyright © Acehack, 2024
           </CopyrightText>
+          <p
+            style={{
+              color: `${theme.colors.text.dark.gray}`,
+            }}
+          >
+            Made by
+            <StyledLink href="https://github.com/kshitijv256/" target="_blank">
+              Kshitij Verma
+            </StyledLink>
+          </p>
         </div>
-        {/* <KshitijLogo>made by Kshitij Verma</KshitijLogo> */}
       </BottomTextContainer>
     </SectionWrapper>
   );
@@ -584,8 +580,49 @@ const Footer: React.FC = () => {
 
 export default Footer;
 
-const KshitijLogo = styled.div`
-  color: ${({ theme }) => theme.colors.text.dark.white};
+const StyledLink = styled.a`
+  padding: 0px 20px 10px 10px;
+  font-family: "Satoshi";
+  font-size: 16px;
+  font-weight: 700;
+  width: fit-content;
+  text-decoration: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      to left,
+      ${theme.colors.primary.cyan} 0%,
+      ${theme.colors.primary.purple} 100%
+    );
+    cursor: pointer;
+  }
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    to left,
+    ${theme.colors.primary.blue} 0%,
+    ${theme.colors.primary.purple} 100%
+  );
+  -webkit-background-image: linear-gradient(
+    to left,
+    ${theme.colors.primary.blue} 0%,
+    ${theme.colors.primary.purple} 100%
+  );
+`;
+
+const OrganizersContainer = styled.div`
+  width: 98%;
+  justify-content: end;
+  align-items: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   margin-right: 20px;
-  margin-top: 10px;
+
+  ${mediaQueries.custom(768)} {
+    flex-direction: column;
+  }
 `;

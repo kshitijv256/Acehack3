@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "styled-components/macro";
@@ -6,7 +5,7 @@ import Icon from "src/components/base/Icon";
 import { SOCIALS } from "src/constants/social";
 import { TWShared, BodyBold, theme } from "src/styles";
 
-import { NavBarProps, SECTIONS, WEBSITE2022URL } from "./constants";
+import { NavBarProps, SECTIONS } from "./constants";
 
 const containerStyles: React.CSSProperties = {
   display: "flex",
@@ -74,16 +73,16 @@ const Menu: React.FC<NavBarProps> = ({ notMainPage }) => {
           </a>
         </div>
       ) : null} */}
-      {Object.entries(SOCIALS).map(([id, { icon, link, fathomEventCode }]) => (
+      {Object.entries(SOCIALS).map(([id, { icon, link }]) => (
         <div style={{ alignSelf: "center" }} key={id}>
           <a
             aria-label={id}
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackGoal(fathomEventCode, 0)}
+            onClick={() => {}}
           >
-            <Icon name={icon} hover={true}></Icon>
+            <Icon name={icon} width={24} height={24} hover={true}></Icon>
           </a>
         </div>
       ))}

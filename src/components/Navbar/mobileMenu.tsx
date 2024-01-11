@@ -1,4 +1,3 @@
-import { trackGoal } from "fathom-client";
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import tw, { styled } from "twin.macro";
@@ -102,39 +101,42 @@ const MobileMenu: React.FC<TMobileMenuProps> = ({
           ) : null}
           <ListItem tw="h-96">
             <List tw="flex justify-between mt-20">
-              {Object.entries(SOCIALS).map(
-                ([id, { icon, link, fathomEventCode }]) => (
-                  <ListItem
-                    variants={mobileItemVariants}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    key={id}
+              {Object.entries(SOCIALS).map(([id, { icon, link }]) => (
+                <ListItem
+                  variants={mobileItemVariants}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  key={id}
+                  css={[
+                    isOpen
+                      ? tw`pointer-events-auto`
+                      : tw`pointer-events-none select-none`,
+                  ]}
+                >
+                  <a
+                    aria-label={id}
+                    href={link}
+                    tabIndex={isHidden ? -1 : 0}
+                    aria-hidden={isHidden ? "true" : undefined}
+                    target="_blank"
                     css={[
                       isOpen
                         ? tw`pointer-events-auto`
                         : tw`pointer-events-none select-none`,
                     ]}
+                    tw="mr-16"
+                    rel="noreferrer"
+                    onClick={() => {}}
                   >
-                    <a
-                      aria-label={id}
-                      href={link}
-                      tabIndex={isHidden ? -1 : 0}
-                      aria-hidden={isHidden ? "true" : undefined}
-                      target="_blank"
-                      css={[
-                        isOpen
-                          ? tw`pointer-events-auto`
-                          : tw`pointer-events-none select-none`,
-                      ]}
-                      tw="mr-16"
-                      rel="noreferrer"
-                      onClick={() => trackGoal(fathomEventCode, 0)}
-                    >
-                      <Icon name={icon}></Icon>
-                    </a>
-                  </ListItem>
-                )
-              )}
+                    <Icon
+                      name={icon}
+                      width={24}
+                      height={24}
+                      hover={true}
+                    ></Icon>
+                  </a>
+                </ListItem>
+              ))}
             </List>
           </ListItem>
         </List>
