@@ -52,13 +52,15 @@ const HeadingContainer = styled.div`
 
 const AccordionWrapper = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: between;
   column-gap: 96px;
   margin-top: 6%;
   height: auto;
 
   ${mediaQueries.tablet} {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   ${mediaQueries.largeMobile} {
