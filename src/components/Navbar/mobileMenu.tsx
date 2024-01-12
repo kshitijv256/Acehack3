@@ -74,31 +74,7 @@ const MobileMenu: React.FC<TMobileMenuProps> = ({
                 </ListItem>
               );
             })}
-          {!notMainPage ? (
-            <ListItem
-              key={Object.keys(SECTIONS).length}
-              variants={mobileItemVariants}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              css={[
-                isOpen
-                  ? tw`pointer-events-auto`
-                  : tw`pointer-events-none select-none`,
-              ]}
-            >
-              <a
-                key={Object.keys(SECTIONS).length}
-                href={WEBSITE2022URL}
-                onClick={() => toggleIsOpen()} // menu should close after section is clicked
-                tabIndex={isHidden ? -1 : 0}
-                aria-hidden={isHidden ? "true" : undefined}
-              >
-                <span tw="mb-24" css={[TWText.bodyBold]}>
-                  2022
-                </span>
-              </a>
-            </ListItem>
-          ) : null}
+
           <ListItem tw="h-96">
             <List tw="flex justify-between mt-20">
               {Object.entries(SOCIALS).map(([id, { icon, link }]) => (

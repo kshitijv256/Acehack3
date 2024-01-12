@@ -66,7 +66,7 @@ const Heading: React.FC<{ currentStepIndex: number }> = ({
         Celebrating 3{titleBrk ? <br /> : " "}years of
         <br />
         <div style={{ visibility: glitchFrame >= 2 ? "visible" : "hidden" }}>
-          {useDeviceSize("mobile") ? (
+          {useDeviceSize("tablet") ? (
             <FullWidth>
               <TextLoop adjustingSpeed={10}>
                 <BottomPadding>AceHack</BottomPadding>
@@ -78,7 +78,7 @@ const Heading: React.FC<{ currentStepIndex: number }> = ({
               </TextLoop>
             </FullWidth>
           ) : (
-            "Acehack"
+            currentWord
           )}
         </div>
       </Title>

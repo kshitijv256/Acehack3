@@ -16,6 +16,6 @@ export const deviceBreakpoints: Record<DeviceType, number> = {
   medium: 1024,
   tablet: 834,
   largeMobile: 425,
-  mobile: 360,
+  mobile: 375,
   smallMobile: 320,
 };
