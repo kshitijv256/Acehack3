@@ -279,6 +279,7 @@ export { default as GearYellowImg } from "./note/GearYellow.svg";
 // Footer
 export { default as UemImg } from "./organizers/uem.png";
 export { default as ACMImg } from "./organizers/acm.jpeg";
+export { default as EduhubImg } from "./organizers/eduhub.png";
 export { default as AlvinImg } from "./organizers/alvin.jpeg";
 export { default as AndrewImg } from "./organizers/andrew.jpeg";
 export { default as AnurajImg } from "./organizers/anuraj.jpeg";

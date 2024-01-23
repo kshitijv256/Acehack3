@@ -119,8 +119,8 @@ const _2023: Year = {
   gradientEnd: theme.colors.primary.purple,
   description: [
     "Held at a much grander scale than previous year",
-    "24 hours of hacking with over 1,000 hackers",
-    "₹75,000 of cash prizes",
+    "24 hours of hacking with over 600 hackers",
+    "6000 USD worth prizes",
   ],
   top: {
     isMobile: "220px",

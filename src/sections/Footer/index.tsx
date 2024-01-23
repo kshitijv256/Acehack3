@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ACMImg, UemImg } from "src/assets/img";
+import { ACMImg, EduhubImg, UemImg } from "src/assets/img";
 import { ContentWrapper, SectionWrapper } from "src/components/base";
 import { ORGANIZERS } from "src/copy/organizers";
 import { LargeBodyBold, theme } from "src/styles";
@@ -542,8 +542,9 @@ const Footer: React.FC = () => {
         </RightGrid> */}
       </OrganizerContentWrapper>
       <OrganizersContainer>
-        <OrganizerImg src={ACMImg} alt="Kshitij Verma" loading="lazy" />
-        <OrganizerImg src={UemImg} alt="Kshitij Verma" loading="lazy" />
+        <OrganizerImg src={ACMImg} alt="ACM" loading="lazy" />
+        <OrganizerImg src={UemImg} alt="UEMJ" loading="lazy" />
+        <OrganizerImg src={EduhubImg} alt="Eduhub" loading="lazy" />
       </OrganizersContainer>
       <BottomTextContainer>
         {/* <MinorBottomContainer>
