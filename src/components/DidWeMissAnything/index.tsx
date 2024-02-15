@@ -76,7 +76,7 @@ const DidWeMissAnything: React.FC = () => {
       <SubtextWrapper>
         <Subtext>Reach out to us at&nbsp;</Subtext>
         <StyledLink
-          href="acehack@eduhubcommunity.tech"
+          href="mailto:acehack@eduhubcommunity.tech"
           onClick={
             () => {} // Sign Up: Clicked Email Contact
           }
