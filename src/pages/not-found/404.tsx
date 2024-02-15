@@ -40,7 +40,7 @@ const NotFoundPage: React.FC = () => {
                 looks like this page doesn&#8217;t exist...
               </WhiteHeading1>
               <StyledLinkWrapper>
-                <SponsorLink href="https://hackthenorth.com">
+                <SponsorLink href="https://acehack.uem.edu.in/">
                   Back to Home Page
                 </SponsorLink>
               </StyledLinkWrapper>
