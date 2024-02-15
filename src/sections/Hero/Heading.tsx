@@ -83,7 +83,7 @@ const Heading: React.FC<{ currentStepIndex: number }> = ({
         </div>
       </Title>
       <Subtitle style={{ visibility: glitchFrame >= 2 ? "visible" : "hidden" }}>
-        March 29-30, 2024 • In-person event {!brk && "• "}
+        April 6-7, 2024 • In-person event {!brk && "• "}
         {brk && <br />}
         {/* <StyledLogo alt="MLH Logo" src={MLHLogo} /> */}
         UEM Jaipur

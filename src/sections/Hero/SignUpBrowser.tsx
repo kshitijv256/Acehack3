@@ -1,5 +1,5 @@
 import React from "react";
-import { UnstyledLink, BrowserWindowGradient } from "src/components/base";
+import { UnstyledLink, BrowserWindowGradient, Link } from "src/components/base";
 import { mediaQueries } from "src/utils/responsive";
 import styled, { useTheme } from "styled-components";
 
@@ -17,11 +17,22 @@ const SignUpBrowser: React.FC = () => {
         gradientEndColor={theme.colors.secondary.purpleLight}
       >
         <BrowserContainer>
-          <TextContainer>
-            Applications for AceHack 3.0 will open soon.
-            <br />
-            Stay tuned for updates!
-          </TextContainer>
+          <Link
+            newTab={true}
+            href="https://acehack-3.devfolio.co/"
+            onClick={
+              () => {} // Sign Up: Clicked Email Contact
+            }
+            style={{
+              marginTop: "24px",
+              backgroundColor: "purple",
+              padding: "10px 20px",
+              borderRadius: "5px",
+              color: "white",
+            }}
+          >
+            <Subtext>Apply with Devfolio</Subtext>
+          </Link>
           <UnstyledLink
             newTab={true}
             href="https://drive.google.com/file/d/1Wl2124ChuDGRy0FVs6JtzwBqq7w6EJ_X/view?usp=sharing"
