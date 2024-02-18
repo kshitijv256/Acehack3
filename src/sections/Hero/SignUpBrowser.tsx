@@ -25,13 +25,19 @@ const SignUpBrowser: React.FC = () => {
             }
             style={{
               marginTop: "24px",
-              backgroundColor: "purple",
+              backgroundColor: "#8d58e0ff",
               padding: "10px 20px",
               borderRadius: "5px",
               color: "white",
             }}
           >
-            <Subtext>Apply with Devfolio</Subtext>
+            <Subtext
+              style={{
+                borderBottom: "none",
+              }}
+            >
+              Apply with Devfolio
+            </Subtext>
           </Link>
           <UnstyledLink
             newTab={true}
@@ -66,7 +72,7 @@ const BrowserContainer = styled(Column)`
   padding: 25px;
   text-align: left;
   line-height: 32px;
-  align-items: flex-start;
+  align-items: flex-center;
   color: ${({ theme }) => theme.colors.text.dark.white};
   ${mediaQueries.tablet} {
     padding: 20px;

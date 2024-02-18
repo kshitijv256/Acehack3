@@ -16,7 +16,7 @@ export { default as PurpleVector2Img } from "./404/purple-vector-2.png";
 export { default as YellowVectorImg } from "./404/yellow-vector.png";
 
 // Hero
-export { default as logoImg } from "./hero/logoImg.png";
+export { default as logoImg } from "./hero/logo.svg";
 export { default as Collaboration } from "./hero/collaboration.jpeg";
 export { default as Connection } from "./hero/connection.jpeg";
 export { default as Dreaming } from "./hero/dreaming.jpeg";
