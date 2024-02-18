@@ -66,7 +66,12 @@ const Navbar: React.FC<NavBarProps> = ({ notMainPage }) => {
           style={{ marginLeft: isMediumOrSmaller ? "24px" : "0px" }}
         >
           <a href={`/#${SectionId.HERO}`} aria-label="Home">
-            <img src={logoImg} alt="Acehack Logo" tw="h-36" draggable="false" />
+            <img
+              src={logoImg}
+              height="50em"
+              alt="Acehack Logo"
+              draggable="false"
+            />
           </a>
         </div>
 
