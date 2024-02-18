@@ -62,8 +62,13 @@ const Navbar: React.FC<NavBarProps> = ({ notMainPage }) => {
     >
       <InnerContainer>
         <div
-          tw="mr-auto my-10 self-center"
-          style={{ marginLeft: isMediumOrSmaller ? "24px" : "0px" }}
+          style={{
+            marginLeft: isMediumOrSmaller ? "24px" : "0px",
+            marginRight: "auto",
+            marginTop: "10px",
+            marginBottom: "10px",
+            alignSelf: "center",
+          }}
         >
           <a href={`/#${SectionId.HERO}`} aria-label="Home">
             <img
