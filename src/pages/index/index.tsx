@@ -3,7 +3,7 @@ import React, { lazy, Suspense } from "react";
 // import VolunteerMentorWorkshopBanner from "src/components/Banner/VolunteerMentorWorkshopBanner";
 import { Navbar } from "src/components";
 import { Layout } from "src/components/base";
-import { Heading3 } from "src/styles";
+import { Heading1, Heading2, Heading3 } from "src/styles";
 import styled from "styled-components";
 
 const Hero = lazy(() => import("src/sections/Hero"));
@@ -18,7 +18,7 @@ const Footer = lazy(() => import("src/sections/Footer"));
 
 const IndexPage: React.FC = () => (
   <Layout>
-    <Navbar />
+    {/* <Navbar />
     <Suspense fallback={<div />}>
       <Hero />
     </Suspense>
@@ -33,11 +33,11 @@ const IndexPage: React.FC = () => (
     </Suspense>
     <Suspense fallback={<div />}>
       <Stories />
-    </Suspense>
+    </Suspense> */}
     {/* <Suspense fallback={<div />}>
       <Judges />
     </Suspense> */}
-    <Suspense fallback={<div />}>
+    {/* <Suspense fallback={<div />}>
       <Sponsors />
     </Suspense>
     <Suspense fallback={<div />}>
@@ -45,7 +45,18 @@ const IndexPage: React.FC = () => (
     </Suspense>
     <Suspense fallback={<div />}>
       <Footer />
-    </Suspense>
+    </Suspense> */}
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        color: "white",
+      }}
+    >
+      <Heading1>Acehack 3.0 Loading...</Heading1>
+    </div>
   </Layout>
 );
 

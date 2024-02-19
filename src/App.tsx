@@ -16,14 +16,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path={RouteName.MAIN} element={<IndexPage />} />
-        <Route path={RouteName.PRIVACY} element={<Privacy />} />
-        <Route path={RouteName.CODE_OF_CONDUCT} element={<CodeOfConduct />} />
-        <Route path={RouteName.TERMS_AND_CONDITIONS} element={<Terms />} />
-        <Route
-          path={RouteName.TRAVEL_GUIDELINES}
-          element={<TravelGuidelines />}
-        />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<IndexPage />} />
       </Routes>
     </BrowserRouter>
   );
