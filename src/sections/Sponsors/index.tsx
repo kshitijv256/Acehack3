@@ -203,7 +203,7 @@ const Sponsors: React.FC = () => {
           >
             <LargeBodyBold>
               <a
-                href="https://drive.google.com/file/d/1Wl2124ChuDGRy0FVs6JtzwBqq7w6EJ_X/view?usp=sharing"
+                href="https://drive.google.com/file/d/1cADr4eSoVO1U_LuxpLPtPBiwggaeDLcG/view"
                 style={{ textDecoration: "none", color: "inherit" }}
                 target="_blank"
                 rel="noreferrer"
