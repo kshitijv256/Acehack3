@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.overlay {
+  background-color: #020b0c;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.button-shadow {
+  box-shadow: 0.25rem 0.25rem #5c18c9;
+  transition: all .15s linear 0s;
+}
+
+@layer utilities{
+  .grad-text {
+    background: linear-gradient(90deg, #00ffee 0%, #036cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.titled {
+  text-shadow: 0 0 .5vw #6ac4c1, 0 0 1.5vw #6bc5d3, 0 0 5vw #66bac3, 0 0 5vw #6fb3c0, 0 0 .2vw #79bdc8, .5vw .5vw .1vw #2fb9be;
+  color: #c1dfe1;
+}
+
+.platinum {
+  text-shadow: 0 0 .5vw #a075ca, 0 0 1.5vw #a877d9, 0 0 5vw #9466c3, 0 0 5vw #986fc0, 0 0 .2vw #a179c8, .5vw .5vw .1vw #762fbe;
+  color: #cdb1de;
+}
+.gold {
+  text-shadow: 0 0 .5vw #dca841, 0 0 1.5vw #c19337, 0 0 5vw #c19337, 0 0 5vw #c19337, 0 0 .2vw #c19337, .5vw .5vw .1vw #9d7d3c;
+  color: #d5c0a8;
+}
+.silver {
+  text-shadow: 0 0 .5vw #8e8c8c, 0 0 1.5vw #8e8c8c, 0 0 5vw #8e8c8c, 0 0 5vw #8e8c8c, 0 0 .2vw #8e8c8c, .5vw .5vw .1vw #8e8c8c;
+  color: #d5d5d7;
+}
+.bronze {
+  text-shadow: 0 0 .5vw #9d461b, 0 0 1.5vw #9d461b, 0 0 5vw #9d461b, 0 0 5vw #9d461b, 0 0 .2vw #9d461b, .5vw .5vw .1vw #9d461b;
+  color: #d8a687;
+}
+.kind {
+  text-shadow: 0 0 .5vw #a26f91, 0 0 1.5vw #bf7ca8, 0 0 5vw #bf7ca8, 0 0 5vw #bf7ca8, 0 0 .2vw #bf7ca8, .5vw .5vw .1vw #6c3c9d;
+  color: #c9c8cd;
+}
+
+.hide {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.6s;
+}
