@@ -42,7 +42,7 @@ export const Navbar = () => {
               <img
                 src={AceHackSm}
                 alt="AceHack3.0"
-                className="hidden lg:block object-contain h-20"
+                className="hidden lg:block object-contain h-20 ml-5"
               />
             </a>
             <div className="hidden space-x-6 md:flex flex-row items-center justify-center lg:justify-end w-full px-6 py-4">

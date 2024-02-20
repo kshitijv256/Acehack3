@@ -10,7 +10,7 @@ const Referal = () => {
   return (
     <div
       id="referal"
-      className="py-12 text-white z-20 relative bg-[#171f2c] w-full scroll-smooth"
+      className="py-12 text-white z-20 relative bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900 w-full scroll-smooth"
     >
       <div className="flex justify-start pl-4 md:pl-20">
         <h1 className="text-4xl font-bold">Refer and Earn</h1>
