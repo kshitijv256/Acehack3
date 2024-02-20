@@ -20,15 +20,15 @@ import { MdCall } from "react-icons/md";
 const Footer = () => {
   return (
     <IconContext.Provider value={{ style: { fontSize: "1.5rem" } }}>
-      <div className="relative z-20 text-gray-200 flex flex-col w-full bg-gray-800">
+      <div className="relative z-20 text-gray-200 flex flex-col w-full bg-[#1B0133]">
         <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start px-10 py-5 text-center sm:text-left gap-10">
           <div className="flex flex-col sm:justify-between gap-6">
             <p className="text-2xl">Follow Us</p>
             <div className="flex gap-5">
-              <a href="https://www.instagram.com/acehack2.0/">
+              <a href="https://www.instagram.com/acehack3.0/">
                 <FaInstagram />
               </a>
-              <a href="https://www.linkedin.com/company/acehack-2-0/">
+              <a href="https://www.linkedin.com/company/acehack-3-0/">
                 <FaLinkedinIn />
               </a>
               <a href="https://twitter.com/AceHack_uemj" target={"_blank"}>
