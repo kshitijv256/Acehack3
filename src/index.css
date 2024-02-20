@@ -81,3 +81,49 @@ body {
   overflow: hidden;
   transition: height ease 0.6s;
 }
+
+
+/* css for prizes border gradient */
+#box{
+  position: relative; 
+margin-top: 1rem;
+margin-bottom: 1rem; 
+margin-top: 2.5rem; 
+align-items: center; 
+border-radius: 0.75rem; 
+/* border-width: 8px;  */
+width: 20rem; 
+height: 20rem; 
+}
+.gradient-border {
+  --borderWidth: 8px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #F765FF, #D700E6, #CC28FD, #B53CFE, #A44AFF, #8232EB,#4E0EB1);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
