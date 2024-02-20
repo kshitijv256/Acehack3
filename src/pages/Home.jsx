@@ -39,7 +39,7 @@ const Home = () => {
         </div> */}
         <img
           alt="AceHack Logo"
-          className="min-w-[30%] w-[40%] max-w-[80%] mb-6 md:mb-0 mt-20"
+          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] mb-6 md:mb-0 mt-20 w-[80%]"
           src={AceHackLogo}
         />
         <CountdownTimer targetDate={new Date("2024-04-06T00:10:00")} />
