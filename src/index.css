@@ -97,7 +97,7 @@ height: 20rem;
 }
 .gradient-border {
   --borderWidth: 8px;
-  background: #1D1F20;
+  background: #100028f1;
   position: relative;
   border-radius: var(--borderWidth);
 }
