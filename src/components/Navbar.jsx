@@ -41,7 +41,7 @@ export const Navbar = () => {
             <a href="/">
               <img
                 src={AceHackSm}
-                alt="AceHack2.0"
+                alt="AceHack3.0"
                 className="hidden lg:block object-contain h-20"
               />
             </a>
