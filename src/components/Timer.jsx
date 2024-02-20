@@ -34,7 +34,7 @@ const getReturnValues = (countDown) => {
 const DateTimeDisplay = ({ value, type }) => {
   return (
     <div className="px-2 flex flex-col items-center">
-      <p className="font-extrabold text-cyan-400 text-5xl">{value}</p>
+      <p className="font-extrabold text-violet-400 text-5xl">{value}</p>
       <span>{type}</span>
     </div>
   );

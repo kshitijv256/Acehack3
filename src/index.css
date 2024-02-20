@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
 .bgVideo {
   object-fit: cover;
   width: 100vw;
@@ -14,7 +19,7 @@
 
 .overlay {
   background-color: #020b0c;
-  opacity: 0.8;
+  opacity: 0.6;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,13 +29,13 @@
 }
 
 .button-shadow {
-  box-shadow: 0.25rem 0.25rem #5c18c9;
+  box-shadow: 0.25rem 0.25rem #6118d7;
   transition: all .15s linear 0s;
 }
 
 @layer utilities{
   .grad-text {
-    background: linear-gradient(90deg, #00ffee 0%, #036cff 100%);
+    background: linear-gradient(90deg,  #d37bff 0%, #8f4eff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

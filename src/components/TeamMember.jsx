@@ -1,12 +1,12 @@
 import React from "react";
 
-const TeamMember = ({member}) => {
+const TeamMember = ({ member }) => {
   return (
-    <div className="w-[320px] h-36 m-6 bg-gray-900 group hover:bg-gradient-to-br from-cyan-700/30 to-gray-900 rounded-xl shadow-lg p-4 flex flex-col justify-between items-end z-30 relative">
+    <div className="w-[320px] h-36 m-6 bg-gray-900 group hover:bg-gradient-to-br from-violet-700/30 to-gray-900 rounded-xl shadow-lg p-4 flex flex-col justify-between items-end z-30 relative">
       <div className="flex flex-row justify-between items-start">
         <div className="mr-8">
           <img
-            className="object-center object-cover rounded-full h-24 w-24 group-hover:ring-cyan-600 ring-8 absolute top-[-20px] left-5"
+            className="object-center object-cover rounded-full h-24 w-24 group-hover:ring-violet-600 ring-8 absolute top-[-20px] left-5"
             src={member.image}
             alt="photo"
           />

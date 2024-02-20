@@ -13,6 +13,7 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 
 import uem from "/assets/images/uem.png";
+import eduhub from "/assets/images/eduhub.png";
 import acm from "/assets/images/acm.jpeg";
 import { MdCall } from "react-icons/md";
 
@@ -45,24 +46,25 @@ const Footer = () => {
             <p className="text-2xl">Contact Us</p>
             <div className="flex">
               <AiOutlineMail />
-              <a href="mailto:sahitya.roy2020@uem.edu.in" target={"_blank"}>
-                &nbsp;sahitya.roy2020@uem.edu.in
+              <a href="mailto:acehack@eduhubcommunity.tech" target={"_blank"}>
+                &nbsp;acehack@eduhubcommunity.tech
               </a>
             </div>
-            <div className="flex">
+            {/* <div className="flex">
               <MdCall />
               <p> +91 7584926589</p>
             </div>
             <div className="flex">
               <MdCall />
               <p> +91 6202264540</p>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col sm:justify-between">
             <p className="text-2xl">Organizing Body</p>
             <div className="flex">
               <Icon icon={uem} height={"h-16"} />
               <Icon icon={acm} height={"h-16"} />
+              <Icon icon={eduhub} height={"h-16"} />
             </div>
           </div>
         </div>

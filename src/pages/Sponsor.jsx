@@ -124,7 +124,7 @@ const Sponsor = () => {
         </div> */}
         <p className="text-4xl font-extrabold pt-10">
           Become a{" "}
-          <span className="underline-offset-8 underline decoration-cyan-300">
+          <span className="underline-offset-8 underline decoration-violet-300">
             sponsor
           </span>{" "}
           of <b className="grad-text"> AceHack 3.0</b>{" "}

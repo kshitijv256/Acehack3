@@ -16,7 +16,7 @@ import Why from "./pages/why";
 import Referal from "./pages/referal";
 import Schedule from "./components/schedule";
 import AddressMap from "./pages/map";
-import AceHackSm from "/assets/images/AceHack-sm-logo.png";
+import AceHackSm from "/assets/images/website-v2.svg";
 import Live from "./pages/Live";
 
 const AceLogo = (prop) => {
@@ -29,7 +29,7 @@ const AceLogo = (prop) => {
           <a href="/">
             <img
               src={AceHackSm}
-              alt="AceHack2.0"
+              alt="AceHack3.0"
               className="hidden lg:block object-contain"
             />
           </a>

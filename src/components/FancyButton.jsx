@@ -13,7 +13,7 @@ const FancyButton = (props) => {
   };
   return (
     <button
-      className="hover:translate-x-1 hover:translate-y-1 hover:shadow-none uppercase bg-cyan-400 font-semibold text-xl whitespace-nowrap py-2 px-4 rounded-sm cursor-pointer button-shadow"
+      className="hover:translate-x-1 hover:translate-y-1 hover:shadow-none uppercase bg-gradient-to-r from-violet-500 to-fuchsia-400 font-semibold text-xl whitespace-nowrap py-2 px-4 rounded-sm cursor-pointer button-shadow"
       onClick={handleClickScroll}
     >
       {props.data}
