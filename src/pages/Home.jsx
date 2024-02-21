@@ -39,7 +39,7 @@ const Home = () => {
         </div> */}
         <img
           alt="AceHack Logo"
-          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] mb-6 md:mb-0 mt-20 w-[80%]"
+          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] drop-shadow-[0_0px_100px_rgba(0,0,0,0.5)] mb-6 md:mb-0 mt-20 w-[80%]"
           src={AceHackLogo}
         />
         <CountdownTimer targetDate={new Date("2024-04-06T00:10:00")} />
@@ -51,7 +51,7 @@ const Home = () => {
             style={{ height: "44px", width: "312px" }}
           ></div> */}
           <div
-            className="bg-violet-500 rounded-md hover:bg-violet-400"
+            className="bg-violet-500 rounded-md hover:bg-violet-600"
             style={{ height: "44px", width: "312px" }}
           >
             <a
