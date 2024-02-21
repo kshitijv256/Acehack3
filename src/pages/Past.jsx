@@ -26,7 +26,7 @@ const Past = () => {
     >
       <div
         id="past"
-        className="pt-24 text-white z-20 relative bg-[#1b2b44] w-full py-10 h-fit scroll-smooth"
+        className="pt-24 text-white z-20 relative bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900 w-full py-10 h-fit scroll-smooth"
       >
         <div className="flex flex-col items-center text-center">
           <h1 className="text-5xl font-bold pb-10 flex-wrap">
