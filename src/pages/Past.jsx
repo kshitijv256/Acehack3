@@ -10,12 +10,21 @@ import {
 import { IoRocket } from "react-icons/io5";
 import { IconContext } from "react-icons";
 
-import pic1 from "/assets/images/acehack/1.jpg";
-import pic2 from "/assets/images/acehack/2.jpg";
-import pic3 from "/assets/images/acehack/3.jpeg";
-import pic4 from "/assets/images/acehack/4.jpeg";
-import pic5 from "/assets/images/acehack/5.jpeg";
-import pic7 from "/assets/images/acehack/7.jpeg";
+//old pics
+
+// import pic1 from "/assets/images/acehack/1.jpg";
+// import pic2 from "/assets/images/acehack/2.jpg";
+// import pic3 from "/assets/images/acehack/3.jpeg";
+// import pic4 from "/assets/images/acehack/4.jpeg";
+// import pic5 from "/assets/images/acehack/5.jpeg";
+// import pic7 from "/assets/images/acehack/7.jpeg";
+
+// new pics
+
+import pic8 from "/assets/images/acehack/pic1.jpg";
+import pic9 from "/assets/images/acehack/pic2.jpg";
+import pic10 from "/assets/images/acehack/pic3.jpg";
+import pic11 from "/assets/images/acehack/pic4.jpg";
 
 const Past = () => {
   return (
@@ -63,13 +72,17 @@ const Past = () => {
           {/* <div className="relative w-full flex gap-6 justify-start overflow-x-auto py-10 scrollbar-hide snap-x"> */}
 
           <div className="flex md:flex-row flex-wrap flex-col justify-center w-[80%] py-4 my-4">
-            <Pictures imgSrc={pic1} />
-            <Pictures imgSrc={pic7} />
+            {/* <Pictures imgSrc={pic1} /> */}
+            {/* <Pictures imgSrc={pic7} /> */}
             {/* <Pictures imgSrc={"/assets/images/acehack/6.jpeg"}/> */}
-            <Pictures imgSrc={pic3} />
-            <Pictures imgSrc={pic4} />
-            <Pictures imgSrc={pic5} />
-            <Pictures imgSrc={pic2} />
+            {/* <Pictures imgSrc={pic3} /> */}
+            {/* <Pictures imgSrc={pic4} /> */}
+            {/* <Pictures imgSrc={pic5} /> */}
+            {/* <Pictures imgSrc={pic2} /> */}
+            <Pictures imgSrc={pic8} />
+            <Pictures imgSrc={pic9} />
+            <Pictures imgSrc={pic10} />
+            <Pictures imgSrc={pic11} />
           </div>
         </div>
       </div>
