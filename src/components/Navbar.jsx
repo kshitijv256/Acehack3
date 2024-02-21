@@ -48,9 +48,9 @@ export const Navbar = () => {
             <div className="hidden space-x-6 md:flex flex-row items-center justify-center lg:justify-end w-full px-6 py-4">
               <FancyButton data="Register" id="register" />
               <FancyButton id={"about"} data={"About"} />
-              <FancyButton id={"live"} data={<a href="/live">Live</a>} />
+              {/* <FancyButton id={"live"} data={<a href="/live">Live</a>} /> */}
               <FancyButton id={"themes"} data={"Tracks"} />
-              <FancyButton id={"team"} data={<a href="/team">Team</a>} />
+              {/* <FancyButton id={"team"} data={<a href="/team">Team</a>} /> */}
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
             <div
@@ -58,9 +58,9 @@ export const Navbar = () => {
             >
               <FancyButton data="Register" id="register" />
               <FancyButton id={"about"} data={"About"} />
-              <FancyButton id={"live"} data={<a href="/live">Live</a>} />
+              {/* <FancyButton id={"live"} data={<a href="/live">Live</a>} /> */}
               <FancyButton id={"themes"} data={"Tracks"} />
-              <FancyButton id={"team"} data={<a href="/team">Team</a>} />
+              {/* <FancyButton id={"team"} data={<a href="/team">Team</a>} /> */}
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
           </div>
