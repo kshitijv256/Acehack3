@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-900 text-gray-500 py-2 px-8 flex sm:flex-row flex-col items-center text-center justify-between gap-2">
+        <div className="bg-gray-950 text-gray-500 py-2 px-8 flex sm:flex-row flex-col items-center text-center justify-between gap-2">
           <div className="mx-32"></div>
           <div className="flex gap-2 flex-col sm:flex-row">
             <p>© 2023 Acehack 3.0</p>
@@ -86,12 +86,12 @@ const Footer = () => {
             </a>{" "}
             &
             <a
-              href="https://github.com/thedevildude"
+              href="https://github.com/bimlesharma"
               target={"_blank"}
               className="grad-text"
             >
               {" "}
-              Devdeep Ghosh
+              Bimlesh
             </a>
           </p>
         </div>

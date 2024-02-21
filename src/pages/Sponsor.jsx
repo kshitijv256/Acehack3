@@ -35,7 +35,7 @@ const Sponsor = () => {
   return (
     <div
       id="sponsor"
-      className="py-16 text-white z-20 relative bg-[#23293f] w-full scroll-smooth"
+      className="py-16 text-white z-20 relative bg-gradient-to-bl from-gray-900 via-purple-950 to-gray-900 w-full scroll-smooth"
     >
       <div className="flex flex-col items-center text-center">
         {/* <h1 className="text-5xl font-bold pb-10">
@@ -124,7 +124,7 @@ const Sponsor = () => {
         </div> */}
         <p className="text-4xl font-extrabold pt-10">
           Become a{" "}
-          <span className="underline-offset-8 underline decoration-violet-300">
+          <span className="underline-offset-8 underline decoration-violet-400">
             sponsor
           </span>{" "}
           of <b className="grad-text"> AceHack 3.0</b>{" "}
