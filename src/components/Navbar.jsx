@@ -41,26 +41,26 @@ export const Navbar = () => {
             <a href="/">
               <img
                 src={AceHackSm}
-                alt="AceHack2.0"
-                className="hidden lg:block object-contain h-20"
+                alt="AceHack3.0"
+                className="hidden lg:block object-contain h-20 ml-5"
               />
             </a>
             <div className="hidden space-x-6 md:flex flex-row items-center justify-center lg:justify-end w-full px-6 py-4">
               <FancyButton data="Register" id="register" />
               <FancyButton id={"about"} data={"About"} />
-              <FancyButton id={"live"} data={<a href="/live">Live</a>} />
+              {/* <FancyButton id={"live"} data={<a href="/live">Live</a>} /> */}
               <FancyButton id={"themes"} data={"Tracks"} />
-              <FancyButton id={"team"} data={<a href="/team">Team</a>} />
+              {/* <FancyButton id={"team"} data={<a href="/team">Team</a>} /> */}
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
             <div
-              className={`${scale} md:hidden py-20 gap-8 ${disp} flex-col w-[60%] ml-[20%] transition ease-in delay-100 duration-200`}
+              className={`${scale} md:hidden py-20 gap-8 ${disp} flex-col m-24 w-[80%] ml-[20%] transition ease-in delay-100 duration-200`}
             >
               <FancyButton data="Register" id="register" />
               <FancyButton id={"about"} data={"About"} />
-              <FancyButton id={"live"} data={<a href="/live">Live</a>} />
+              {/* <FancyButton id={"live"} data={<a href="/live">Live</a>} /> */}
               <FancyButton id={"themes"} data={"Tracks"} />
-              <FancyButton id={"team"} data={<a href="/team">Team</a>} />
+              {/* <FancyButton id={"team"} data={<a href="/team">Team</a>} /> */}
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
           </div>

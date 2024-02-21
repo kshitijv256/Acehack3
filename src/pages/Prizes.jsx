@@ -7,12 +7,12 @@ import third from "/assets/images/prizes/third.png";
 
 const Prizes = () => {
   return (
-    <div className="py-12 w-full bg-gray-900 relative z-20 text-white scroll-smooth">
+    <div className="py-12 w-full bg-gradient-to-bl from-gray-900 via-purple-950 to-gray-900 relative z-20 text-white scroll-smooth">
       <div className="flex flex-col items-center">
         <div className="flex flex-row justify-center mb-6">
           <h1 className="grad-text text-5xl font-bold">Prizes</h1>
         </div>
-        <div className="flex flex-row flex-wrap mx-4 md:mx-10 gap-6 justify-center mt-10">
+        <div className="flex flex-row flex-wrap mx-4 md:mx-10 gap-[75px] 2xl:gap-x-[7%] justify-center mt-10">
           <PrizeItem
             title="1st Prize"
             prize="₹ 30,000"
@@ -20,7 +20,7 @@ const Prizes = () => {
             space="justify-end"
             image={
               <img
-                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-violet-400"
+                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-purple-500"
                 src={first}
                 alt="prize"
               />
@@ -33,7 +33,7 @@ const Prizes = () => {
             space="justify-end"
             image={
               <img
-                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-violet-400"
+                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-purple-500"
                 src={second}
                 alt="prize"
               />
@@ -46,7 +46,7 @@ const Prizes = () => {
             space="justify-end"
             image={
               <img
-                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-violet-400"
+                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-purple-500"
                 src={third}
                 alt="prize"
               />
@@ -58,12 +58,12 @@ const Prizes = () => {
             color="text-pink-300"
           /> */}
           <PrizeItem
-            color="text-sky-300"
+            color="text-purple-400"
             title="4th-10th Prize"
             prize="Swag Box"
           />
           <PrizeItem
-            color="text-sky-300"
+            color="text-purple-400"
             title=" Best CTF Winner"
             prize="Coming Soon"
           />
