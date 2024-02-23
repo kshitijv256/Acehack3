@@ -18,6 +18,7 @@ import Schedule from "./components/schedule";
 import AddressMap from "./pages/map";
 import AceHackSm from "/assets/images/website-v2.svg";
 import Live from "./pages/Live";
+import GetInvolved from "./pages/GetInvolved";
 
 const AceLogo = (prop) => {
   return (
@@ -58,9 +59,11 @@ const App = () => {
                   <Prizes />
                   <Referal />
                   <Sponsor />
+                  <GetInvolved/>
                   <Past />
                   <Speakers />
                   <Faculty />
+                  <Why />
                   <AddressMap />
                   <Faq />
                 </div>
