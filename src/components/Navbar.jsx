@@ -51,6 +51,7 @@ export const Navbar = () => {
               {/* <FancyButton id={"live"} data={<a href="/live">Live</a>} /> */}
               <FancyButton id={"themes"} data={"Tracks"} />
               {/* <FancyButton id={"team"} data={<a href="/team">Team</a>} /> */}
+              <FancyButton id={"getInvolved"} data={"Get Involved"} />
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
             <div
@@ -61,6 +62,7 @@ export const Navbar = () => {
               {/* <FancyButton id={"live"} data={<a href="/live">Live</a>} /> */}
               <FancyButton id={"themes"} data={"Tracks"} />
               {/* <FancyButton id={"team"} data={<a href="/team">Team</a>} /> */}
+              <FancyButton id={"getInvolved"} data={"Get Involved"} />
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
           </div>

@@ -59,7 +59,7 @@ const App = () => {
                   <Prizes />
                   <Referal />
                   <Sponsor />
-                  <GetInvolved/>
+                  <GetInvolved />
                   <Past />
                   <Speakers />
                   <Faculty />
