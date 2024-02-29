@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FancyButton from "./FancyButton";
 import AceHackSm from "/assets/images/website-v2.svg";
+// import AceHackSm from "/assets/images/acehack-nordek.svg";
 import { IconContext } from "react-icons";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
