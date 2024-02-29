@@ -1,5 +1,6 @@
 import React from "react";
-import AceHackLogo from "/assets/images/website-v2.svg";
+// import AceHackLogo from "/assets/images/website-v2.svg";
+import AceHackLogo from "/assets/images/acehack-nordek.svg";
 import backgroundImage from "/assets/images/background-image.jpg";
 import { ImLocation } from "react-icons/im";
 import CountdownTimer from "../components/Timer";
@@ -27,8 +28,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="sticky top-[10vh] z-0 pb-20 text-white scroll-smooth bg-gradient-to-r from-violet-900/80
-       to-fuchsia-700/80"
+      className="sticky top-[10vh] z-0 pb-20 text-white scroll-smooth bg-gradient-to-r from-[#2E1065] to-fuchsia-900"
     >
       <div className="bg-black/20"></div>
       <div className="flex flex-col justify-start items-center">
@@ -39,7 +39,7 @@ const Home = () => {
         </div> */}
         <img
           alt="AceHack Logo"
-          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] drop-shadow-[0_0px_100px_rgba(0,0,0,0.5)] mb-6 md:mb-0 mt-20 w-[80%]"
+          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] drop-shadow-xl mb-6 md:mb-0 mt-20 w-[80%]"
           src={AceHackLogo}
         />
         <CountdownTimer targetDate={new Date("2024-04-06T00:10:00")} />
