@@ -9,7 +9,7 @@ const AddressMap = () => {
       </div>
       <div className="w-4/5 gradient-border mt-5">
         <iframe
-        className="rounded"
+        className="rounded-md"
           width="100%"
           height="500"
           frameborder="0"

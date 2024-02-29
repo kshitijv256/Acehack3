@@ -5,6 +5,7 @@ const PrizeItem = (props) => {
     <div
       className={`flex flex-col ${props.space} gradient-border`} 
       id={`box`}
+      style={{borderWidth : "8px", borderColor: "transparent"}}
     >
       {props.image}
       <h2 className="text-3xl font-bold px-4 py-5">{props.title}</h2>
