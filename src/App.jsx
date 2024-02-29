@@ -61,9 +61,9 @@ const App = () => {
                   <Sponsor />
                   <GetInvolved />
                   <Past />
-                  <Speakers />
+                  {/* <Speakers /> */}
                   <Faculty />
-                  <Why />
+                  {/* <Why /> */}
                   <AddressMap />
                   <Faq />
                 </div>

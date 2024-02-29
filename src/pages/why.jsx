@@ -4,6 +4,7 @@ import briefcase from "/assets/images/why/briefcase-icon.png";
 import food from "/assets/images/why/food-box-icon.png";
 import people from "/assets/images/why/people-icon.png";
 import project from "/assets/images/why/project-development-icon.png";
+import tshirt from "/assets/images/why/tshirt.png";
 
 const Why = () => {
   return (
@@ -42,6 +43,12 @@ const Why = () => {
             <img src={food} alt="meeting" className="h-48 mt-10 mb-3" />
             <h1 className="text-xl font-semibold">
               Get free food & fun environment
+            </h1>
+          </div>
+          <div className="text-center w-80 flex flex-col items-center">
+            <img src={tshirt} alt="meeting" className="h-48 mt-10 mb-3" />
+            <h1 className="text-xl font-semibold">
+              AceHack3.0 Exclusive t-shirt for all.
             </h1>
           </div>
         </div>

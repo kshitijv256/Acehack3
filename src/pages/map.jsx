@@ -1,14 +1,15 @@
 const AddressMap = () => {
   return (
     <div
-      id="map"
+      id="map" 
       className="google-map-code flex flex-col items-center relative backdrop-blur-xl justify-evenly gap-6 py-10"
     >
       <div className="text-5xl font-bold text-white">
         How to <span className="grad-text">Reach?</span>
       </div>
-      <div className="w-4/5 border-[16px] rounded border-sky-400">
+      <div className="w-4/5 gradient-border mt-5">
         <iframe
+        className="rounded"
           width="100%"
           height="500"
           frameborder="0"
