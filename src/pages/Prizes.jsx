@@ -71,7 +71,7 @@ const Prizes = () => {
             image={
               <img
                 className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-purple-500"
-                src={ctf}
+                src={box}
                 alt="prize"
               />
             }
