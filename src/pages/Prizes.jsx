@@ -4,6 +4,8 @@ import PrizeItem from "../components/PrizeItem";
 import first from "/assets/images/prizes/first.png";
 import second from "/assets/images/prizes/second.png";
 import third from "/assets/images/prizes/third.png";
+import ctf from "/assets/images/prizes/ctf-winner.png";
+import box from "/assets/images/prizes/mystery-box.png";
 
 const Prizes = () => {
   return (
@@ -11,6 +13,10 @@ const Prizes = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-row justify-center mb-6">
           <h1 className="grad-text text-5xl font-bold">Prizes</h1>
+        </div>
+        <div className="text-center mb-10">
+          <h1 className="text-[50px] md:text-[65px] font-bold">25,00,000+ INR</h1>
+          <p className="text-[30px] md:text-[40px] font-[600]">Worth of Prize Pool</p>
         </div>
         <div className="flex flex-row flex-wrap mx-4 md:mx-10 gap-[75px] 2xl:gap-x-[7%] justify-center mt-10">
           <PrizeItem
@@ -61,11 +67,28 @@ const Prizes = () => {
             color="text-purple-400"
             title="4th-10th Prize"
             prize="Swag Box"
+            space="justify-end"
+            image={
+              <img
+                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-purple-500"
+                src={box}
+                alt="prize"
+              />
+            }
+            
           />
           <PrizeItem
             color="text-purple-400"
             title=" Best CTF Winner"
-            prize="Coming Soon"
+            prize="10,000 INR"
+            space="justify-end"
+            image={
+              <img
+                className="w-40 h-40 top-[-80px] absolute rounded-full border-8 p-4 bg-slate-800 border-purple-500"
+                src={ctf}
+                alt="prize"
+              />
+            }
           />
         </div>
         {/* <div className="flex flex-col w-full items-center">
