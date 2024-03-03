@@ -66,7 +66,7 @@ const Sponsor = () => {
           {/* <Icon icon={uem} height="h-28" /> */}
 
           <a href="https://uem.edu.in/uem-jaipur/" target={"_blank"}>
-            <Icon icon={uem} height="h-28" />
+            <Icon icon={uem} height="h-28 bg-white px-3 py-1" />
           </a>
           <a href="https://acm-jaipur.uem.edu.in/" target={"_blank"}>
             <Icon icon={acm} height="h-28" />
