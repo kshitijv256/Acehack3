@@ -135,3 +135,10 @@ height: 20rem;
 		background-position: 0% 50%;
 	}
 }
+
+
+/*  */
+
+.list ul li{
+  margin-bottom: 5px;
+}

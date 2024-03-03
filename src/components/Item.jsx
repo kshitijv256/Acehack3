@@ -6,7 +6,7 @@ const Item = (props) => {
       <img
         src={props.img}
         alt="AceHack 1.0"
-        className="scale-75 hover:transition duration-300 ease-in hover:scale-[80%]"
+        className="scale-75 rounded-md hover:transition  duration-300 ease-in hover:scale-[80%]"
       />
       <h1 className="text-2xl font-bold py-4 my-4 text-purple-500 hover:text-purple-400 text-align-center">
         {props.text}

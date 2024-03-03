@@ -52,7 +52,7 @@ const Sponsor = () => {
   return (
     <div
       id="sponsor"
-      className="py-16 text-white z-20 relative bg-gradient-to-bl from-gray-900 via-purple-950 to-gray-900 w-full scroll-smooth"
+      className="py-16 text-white z-20 relative bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900 w-full scroll-smooth"
     >
       <div className="flex flex-col items-center text-center">
         <h1 className="text-5xl font-bold pb-10">
@@ -66,7 +66,7 @@ const Sponsor = () => {
           {/* <Icon icon={uem} height="h-28" /> */}
 
           <a href="https://uem.edu.in/uem-jaipur/" target={"_blank"}>
-            <Icon icon={uem} height="h-28" />
+            <Icon icon={uem} height="h-28 bg-white px-3 py-1" />
           </a>
           <a href="https://acm-jaipur.uem.edu.in/" target={"_blank"}>
             <Icon icon={acm} height="h-28" />
