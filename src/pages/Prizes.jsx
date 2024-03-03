@@ -79,6 +79,7 @@ const Prizes = () => {
           />
           <PrizeItem
             color="text-purple-400"
+            title0="24 Hour CTF Challenge"
             title=" Best CTF Winner"
             prize="10,000 INR"
             space="justify-end"

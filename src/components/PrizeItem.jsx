@@ -8,6 +8,7 @@ const PrizeItem = (props) => {
       style={{borderWidth : "8px", borderColor: "transparent"}}
     >
       {props.image}
+      <h2 className="text-2xl font-bold ">{props.title0}</h2>
       <h2 className="text-3xl font-bold px-4 py-5">{props.title}</h2>
       <p
         className={`text-4xl ${props.color} text- font-semibold pt-2 pb-10 px-4`}
