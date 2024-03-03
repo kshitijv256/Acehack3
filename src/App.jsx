@@ -58,8 +58,8 @@ const App = () => {
                   <Why />
                   <Prizes />
                   <Referal />
-                  <Sponsor />
                   <GetInvolved />
+                  <Sponsor />
                   <Past />
                   {/* <Speakers /> */}
                   <Faculty />

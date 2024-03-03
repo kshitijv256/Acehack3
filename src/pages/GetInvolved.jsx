@@ -9,7 +9,7 @@ import mj from "/assets/images/QR/mentor.svg";
 
 const GetInvolved = () => {
   return (
-    <div id="getInvolved" className="relative items-center justify-center bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900 backdrop-blur-lg w-full z-20 py-10 scroll-smooth">
+    <div id="getInvolved" className="relative items-center justify-center bg-gradient-to-bl from-gray-900 via-purple-950 to-gray-900 backdrop-blur-lg w-full z-20 py-10 scroll-smooth">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
         <div className="flex flex-row justify-center w-full">
           <h1 className="font-bold text-5xl mb-10 text-white text-center">
