@@ -72,10 +72,10 @@ const Sponsor = () => {
             <Icon icon={acm} height="h-28" />
           </a>
           {/* <Icon icon={acm} height="h-28" /> */}
-          <Icon icon={iic} height="h-28" />
+          <Icon icon={iic} height="h-28 p-2 bg-white" />
           {/* <Icon icon={eduhub} height="h-28" /> */}
           <a href="https://eduhubcommunity.tech/" target={"_blank"}>
-            <Icon icon={eduhub} height="h-28 bg-white" />
+            <Icon icon={eduhub} height="h-28 bg-white px-2" />
           </a>
           {/* <Icon icon={iba} height="h-28 bg-white" /> */}
           <a href="https://indiablockchainalliance.org/" target={"_blank"}>
@@ -90,7 +90,7 @@ const Sponsor = () => {
         </h1>
         <div className="flex flex-row flex-wrap w-4/5 justify-center items-center">
           <a href="https://www.nordek.io/" target={"_blank"}>
-            <Icon icon={nordek} height="h-28 p-5" />
+            <Icon icon={nordek} height="h-28 py-5 px-8" />
           </a>
         </div>
 
@@ -103,7 +103,7 @@ const Sponsor = () => {
         </h1>
         <div className="flex flex-row flex-wrap w-4/5 justify-center items-center">
           <a href="https://bobble.ai/en/home" target={"_blank"}>
-            <Icon icon={bobbleai} height="h-28 px-4 py-6 bg-white" />
+            <Icon icon={bobbleai} height="h-28 px-10 py-4 bg-white" />
           </a>
           {/* <a href="https://nsb.dev/polygon-bounty" target={"_blank"}>
             <Icon icon={polygon} height="h-28 px-4 py-6" />
@@ -123,7 +123,7 @@ const Sponsor = () => {
             <Icon icon={solana} height="h-24 px-4 py-6" />
           </a> */}
           <a href="https://nsb.dev/replit-bounty" target={"_blank"}>
-            <Icon icon={replit} height="h-28 px-4 py-6" />
+            <Icon icon={replit} height="h-28 px-10 py-6" />
           </a>
           {/* <a href="https://nsb.dev/filecoin-bounty" target={"_blank"}>
             <Icon icon={filecoin} height="h-28 px-4 py-6" />
@@ -132,7 +132,7 @@ const Sponsor = () => {
             <Icon icon={dapps} height="h-28 px-4 py-6 bg-white" />
           </a> */}
           <a href="https://www.taskade.com/" target={"_blank"}>
-            <Icon icon={taskade} height="h-28 px-4 py-6" />
+            <Icon icon={taskade} height="h-28 px-6 py-6" />
           </a>
           {/* <a href="https://www.postman.com/" target={"_blank"}>
             <Icon icon={postman} height="h-28 px-4 py-6" />
@@ -200,7 +200,7 @@ const Sponsor = () => {
         </h1>
         <div className="flex flex-row flex-wrap w-4/5 justify-center items-center">
           <a href="https://polygon.technology/" target={"_blank"}>
-            <Icon icon={polygon} height="h-28" />
+            <Icon icon={polygon} height="h-28 bg-bl py-2 px-8" />
           </a>
           <a href="https://archway.io/" target={"_blank"}>
             <Icon icon={archway} height="h-28" />
@@ -212,7 +212,7 @@ const Sponsor = () => {
             <Icon icon={stellar} height="h-28 bg-white px-5 py-5" />
           </a>
           <a href="https://www.nordek.io/nordek-genesis" target={"_blank"}>
-            <Icon icon={nordekgenesis} height="h-28" />
+            <Icon icon={nordekgenesis} height="h-28 bg-black" />
           </a>
         </div>
 
