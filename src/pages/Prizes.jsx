@@ -1,6 +1,9 @@
 import React from "react";
+// import FancyButton from "../components/FancyButton";
+
 import Collapsible from "../components/Collapsible";
 import PrizeItem from "../components/PrizeItem";
+import PrizeItemCTF from "../components/PrizeItemCTF";
 import first from "/assets/images/prizes/first.png";
 import second from "/assets/images/prizes/second.png";
 import third from "/assets/images/prizes/third.png";
@@ -77,11 +80,12 @@ const Prizes = () => {
             }
             
           />
-          <PrizeItem
+          <PrizeItemCTF
             color="text-purple-400"
             title0="24 Hour CTF Challenge"
-            title=" Best CTF Winner"
+            title="In Offline Mode"
             prize="10,000 INR"
+            
             space="justify-end"
             image={
               <img
