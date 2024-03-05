@@ -5,9 +5,11 @@ import Item from "../components/Item";
 // import prz1 from "/assets/images/prizes/ref_prize1.webp";
 // C:\Users\kumar\OneDrive\Desktop\AceHack3.O\Website\Acehack3\public\assets\images\why\tshirt.png
 import prz1 from "/assets/images/why/tshirtbg.png";
-import prz2 from "/assets/images/why/bottle.webp";
+// import prz2 from "/assets/images/why/bottle.webp";
+import prz2 from "/assets/images/why/bottle.png";
 // import prz2 from "/assets/images/prizes/ref_prize2.webp";
-import prz3 from "/assets/images/why/mug.webp";
+// import prz3 from "/assets/images/why/mug.webp";
+import prz3 from "/assets/images/why/mug.png";
 // import prz3 from "/assets/images/prizes/ref_prize3.png";
 
 const Referal = () => {

@@ -28,7 +28,7 @@ export const Navbar = () => {
     >
       <IconContext.Provider
         value={{
-          style: { fontSize: "2rem", position: "relative", color: "white" },
+          style: { fontSize: "2rem", position: "absolute", color: "white", marginTop: "1rem", marginLeft: "0.5rem"},
         }}
       >
         <div onClick={clickHandler}>
@@ -55,8 +55,10 @@ export const Navbar = () => {
               <FancyButton id={"getInvolved"} data={"Get Involved"} />
               <FancyButton id={"faq"} data={"FAQ"} />
             </div>
+
+            {/* mobile nav below */}
             <div
-              className={`${scale} md:hidden py-20 gap-8 ${disp} flex-col m-24 w-[80%] ml-[20%] transition ease-in delay-100 duration-200`}
+              className={`${scale} md:hidden py-24 gap-8 ${disp} flex-col m-24 w-[80%] ml-[20%] transition ease-in delay-100 duration-200`}
             >
               <FancyButton data="Register" id="register" />
               <FancyButton id={"about"} data={"About"} />
