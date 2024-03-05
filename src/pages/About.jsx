@@ -7,10 +7,10 @@ const About = () => {
       className="pt-24 pb-12 bg-gradient-to-br from-violet-950 via-purple-950 to-gray-900 relative scroll-smooth w-full"
     >
       <div className="flex flex-col text-white text-center items-center">
-        <h1 className="text-5xl font-bold pb-12 flex-wrap">
-          <span className="grad-text">AceHack 3.0</span> Hackathon is here!
+        <h1 className="text-4xl font-bold pb-12 px- flex-wrap">
+          <span className="grad-text">AceHack 3.0</span><br/> Hackathon is here!
         </h1>
-        <div className="text-[26px] text-justify flex flex-col gap-5 lg:px-56 px-5">
+        <div className="md:text-[26px] text-xl text-justify flex flex-col gap-5 lg:px-56 px-5">
           <p>
             This year, be part of an extraordinary gathering of 1,000+
             innovators from around the nation. At AceHack 3.0, dive into a world
@@ -23,9 +23,9 @@ const About = () => {
           </p>
         </div>
         <h2 className="text-4xl font-bold pt-12 pb-8 flex-wrap">
-          <span className="grad-text">UEM JAIPUR ACM</span> STUDENT CHAPTER
+          <span className="grad-text">UEM JAIPUR ACM</span> Student Chapter !
         </h2>
-        <div className="text-[26px] text-justify flex flex-col gap-5 lg:px-56 px-5">
+        <div className="md:text-[26px] text-xl text-justify flex flex-col gap-5 lg:px-56 px-5">
           <p>
             ACM, the world's largest educational and scientific computing
             society, delivers resources that advance computing as a science and
