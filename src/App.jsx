@@ -47,8 +47,7 @@ const App = () => {
       <div className="wrapper bg-gray-900">
         <BrowserRouter>
           <Routes>
-            <Route
-              path="/"
+            <Route path="/" 
               element={
                 <div>
                   <Navbar />
