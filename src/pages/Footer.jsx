@@ -14,7 +14,8 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import uem from "/assets/images/uem.png";
 import eduhub from "/assets/images/eduhub.png";
-import acm from "/assets/images/acm.jpeg";
+// import acm from "/assets/images/acm.jpeg";
+import acm from "/assets/images/acmlogo.png";
 import { MdCall } from "react-icons/md";
 
 const Footer = () => {
@@ -63,7 +64,7 @@ const Footer = () => {
             <p className="text-2xl">Organizing Body</p>
             <div className="flex">
               <Icon icon={uem} height={"h-16 px-2 py-1 bg-white"} />
-              <Icon icon={acm} height={"h-16 "} />
+              <Icon icon={acm} height={"h-16 bg-white px-1 "} />
               <Icon icon={eduhub} height={"h-16"} />
             </div>
           </div>

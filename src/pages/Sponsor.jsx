@@ -3,7 +3,8 @@ import FancyButton from "../components/FancyButton";
 import Icon from "../components/Icon";
 
 import uem from "/assets/images/uem.png";
-import acm from "/assets/images/acm.jpeg";
+// import acm from "/assets/images/acm.jpeg";
+import acm from "/assets/images/acmlogo.png";
 import iic from "/assets/images/iic.jfif";
 import eduhub from "/assets/images/eduhub.png";
 // /workspaces/Acehack3/public/assets/images/eduhub.png
@@ -69,7 +70,7 @@ const Sponsor = () => {
             <Icon icon={uem} height="h-28 bg-white px-3 py-1" />
           </a>
           <a href="https://acm-jaipur.uem.edu.in/" target={"_blank"}>
-            <Icon icon={acm} height="h-28" />
+            <Icon icon={acm} height="h-28 bg-white px-2" />
           </a>
           {/* <Icon icon={acm} height="h-28" /> */}
           <Icon icon={iic} height="h-28 p-2 bg-white" />
