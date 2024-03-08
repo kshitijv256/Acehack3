@@ -30,6 +30,11 @@ import iba from "/assets/images/newSponsors/iba.png";
 import quillaudit from "/assets/images/newSponsors/quillaudit.png";
 // import quillaudit from "/assets/images/newSponsors/QuillAudit.webp";
 
+import orkes from "/assets/images/newSponsors/orkes.svg";
+import hackquest from "/assets/images/newSponsors/hackquest.webp";
+import jumbo from "/assets/images/newSponsors/jumbo.svg";
+// import hackquest from "assets/images/newSponsors/hackquest.webp";
+
 import solana from "/assets/images/sponsors/solana.svg";
 import filecoin from "/assets/images/sponsors/filecoin.png";
 import balsamiq from "/assets/images/sponsors/balsamiq.png";
@@ -95,10 +100,23 @@ const Sponsor = () => {
           </a>
         </div>
 
+        {/* Platinum Sponsors */}
         <h1 className="text-5xl font-bold py-10 ">
           <span className="grad-text">Platinum</span> Sponsors
         </h1>
-        <p>...Coming Soon</p>
+        <div className="flex flex-row flex-wrap w-4/5 justify-center items-center">
+          <a href="https://orkes.io/" target={"_blank"}>
+            <Icon icon={orkes} height="h-28 px-10 py-4 bg-white" />
+          </a>
+          {/* <a href="https://nsb.dev/polygon-bounty" target={"_blank"}>
+            <Icon icon={polygon} height="h-28 px-4 py-6" />
+          </a> */}
+          {/* <a href="https://nsb.dev/polygon-bounty" target={"_blank"}>
+            <Icon icon={polygon} height="h-28 px-4 py-6" />
+          </a> */}
+        </div>
+
+        {/* Gold Sponsors */}
         <h1 className="text-5xl font-bold py-10 ">
           <span className="grad-text">Gold</span> Sponsors
         </h1>
@@ -106,9 +124,9 @@ const Sponsor = () => {
           <a href="https://bobble.ai/en/home" target={"_blank"}>
             <Icon icon={bobbleai} height="h-28 px-10 py-4 bg-white" />
           </a>
-          {/* <a href="https://nsb.dev/polygon-bounty" target={"_blank"}>
-            <Icon icon={polygon} height="h-28 px-4 py-6" />
-          </a> */}
+          <a href="https://www.hackquest.io/" target={"_blank"}>
+            <Icon icon={hackquest} height="h-28 px-6 py-10 bg-black " />
+          </a>
           {/* <a href="https://nsb.dev/polygon-bounty" target={"_blank"}>
             <Icon icon={polygon} height="h-28 px-4 py-6" />
           </a> */}
@@ -126,9 +144,9 @@ const Sponsor = () => {
           <a href="https://nsb.dev/replit-bounty" target={"_blank"}>
             <Icon icon={replit} height="h-28 px-10 py-6" />
           </a>
-          {/* <a href="https://nsb.dev/filecoin-bounty" target={"_blank"}>
-            <Icon icon={filecoin} height="h-28 px-4 py-6" />
-          </a> */}
+          <a href="https://jumbochain.org/" target={"_blank"}>
+            <Icon icon={jumbo} height="h-28 px-4 py-6" data="Jumbo Bloackchain"/>
+          </a>
           {/* <a href="https://maqtoob-testnet.dapps.co/" target={"_blank"}>
             <Icon icon={dapps} height="h-28 px-4 py-6 bg-white" />
           </a> */}
