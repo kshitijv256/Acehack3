@@ -1,9 +1,10 @@
 import React from "react";
 
-const Icon = ({ icon, height }) => {
+const Icon = ({ icon, height, data }) => {
     return (
-        <div className="flex flex-col items-center mx-4 my-5 bg-gray-900">
+        <div className="flex items-center mx-4 my-5 bg-gray-900">
             <img src={icon} className={height} />
+            <p className="text-3xl mr-6">{data}</p>
         </div>
     );
 };
