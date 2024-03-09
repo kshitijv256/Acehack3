@@ -41,9 +41,10 @@ const Home = () => {
         </div> */}
         <img
           alt="AceHack Logo"
-          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] drop-shadow-xl mb-6 md:mb-0 md:mt-[6vh] mt-[35vw] w-[80%]"
+          className="lg:min-w-[30%] lg:w-[40%] lg:max-w-[80%] drop-shadow-xl mb-6 md:mb-0 md:mt-[2vh] mt-[30vw] w-[80%]"
           src={AceHackLogo}
         />
+        <p className="md:text-4xl text-xl font-bold font-mono md:mt-5 text-center">Innovate - Elevate - Transform</p>
         <CountdownTimer targetDate={new Date("2024-04-06T00:10:00")} />
         <div className="flex flex-row flex-wrap w-full justify-center gap-4 mt-5 md:mt-0 mb-4 md:mb-0">
           {/* <div

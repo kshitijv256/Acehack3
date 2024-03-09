@@ -145,7 +145,7 @@ const Sponsor = () => {
             <Icon icon={replit} height="h-28 px-10 py-6" />
           </a>
           <a href="https://jumbochain.org/" target={"_blank"}>
-            <Icon icon={jumbo} height="h-28 px-4 py-6" data="Jumbo Bloackchain"/>
+            <Icon icon={jumbo} height="h-28 px-4 py-6" data="Jumbo Blockchain"/>
           </a>
           {/* <a href="https://maqtoob-testnet.dapps.co/" target={"_blank"}>
             <Icon icon={dapps} height="h-28 px-4 py-6 bg-white" />
