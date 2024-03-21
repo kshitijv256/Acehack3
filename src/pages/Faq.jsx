@@ -26,8 +26,8 @@ const Faq = () => {
           label="Do I Need To Pay Any Money To Register ?"
         >
           <p className="faq-ans">
-            No. You do not have to pay anything to anyone to register yourself
-            for AceHack2.0
+            No, You do not have to pay anything to anyone to register yourself
+            for AceHack3.0
           </p>
         </Collapsible>
         <Collapsible
