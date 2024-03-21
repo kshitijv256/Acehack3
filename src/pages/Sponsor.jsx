@@ -13,6 +13,7 @@ import echo3D from "/assets/images/sponsors/echo3D.png";
 import sticker_mule from "/assets/images/sponsors/sticker_mule.png";
 import wolfram from "/assets/images/sponsors/Wolfram.jpg";
 import devfolio from "/assets/images/newSponsors/devfolio.svg";
+import rj from "/assets/images/newSponsors/rj.png";
 // import devfolio from "/assets/images/sponsors/devfolio.png";
 import replit from "/assets/images/sponsors/replit.png";
 
@@ -86,6 +87,9 @@ const Sponsor = () => {
           {/* <Icon icon={iba} height="h-28 bg-white" /> */}
           <a href="https://indiablockchainalliance.org/" target={"_blank"}>
             <Icon icon={iba} height="h-28 bg-white" />
+          </a>
+          <a href="https://indiablockchainalliance.org/" target={"_blank"}>
+            <Icon icon={rj} height="h-28 p-2 bg-white" />
           </a>
         </div>
 
