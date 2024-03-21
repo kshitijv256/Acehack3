@@ -26,8 +26,8 @@ const Faq = () => {
           label="Do I Need To Pay Any Money To Register ?"
         >
           <p className="faq-ans">
-            No. You do not have to pay anything to anyone to register yourself
-            for AceHack2.0
+            No, You do not have to pay anything to anyone to register yourself
+            for AceHack3.0
           </p>
         </Collapsible>
         <Collapsible
@@ -62,7 +62,7 @@ const Faq = () => {
           label="Will there be goodies and swag ?"
         >
           <p className="faq-ans">
-            Yes, we will be providing goodies and swag to all the participants.
+            Yes, we will be providing <i>t-shirt</i>, <i>goodies</i> and <i>swag</i> to all the participants.
           </p>
         </Collapsible>
         <Collapsible
@@ -86,8 +86,9 @@ const Faq = () => {
           label="What about the travel ?"
         >
           <p className="faq-ans">
-            We will provide a bus to the participants, from Badi chaupar, Chomu
-            pulia and others too.
+            {/* We will provide a bus to the participants, from Badi chaupar, Chomu
+            pulia and others too. */}
+            We will provide bus services in Jaipur ( <i>route will be announced later</i> ).
           </p>
         </Collapsible>
       </div>
