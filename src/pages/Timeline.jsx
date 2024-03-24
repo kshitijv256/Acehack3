@@ -13,7 +13,7 @@ const Timeline = () => {
         { direction: "left", time: "04:10 PM", heading: "Hackquest Session" },
         { direction: "right", time: "06:30 PM", heading: "Funzone opens" },
         { direction: "left", time: "08:30 PM", heading: "Dinner + Acehack3.0 unplugged" },
-        { direction: "right", time: "11:30 PM", heading: "Aryan Singh Session" },
+        { direction: "right", time: "11:30 PM", heading: "Tech Talk by Aryan Singh" },
         { direction: "left", time: "12:30 AM", heading: "Mentoring Round 1" },
         { direction: "right", time: "01:00 AM", heading: "Midnight Snacks" },
         { direction: "left", time: "01:30 AM", heading: "Game Zone" },
