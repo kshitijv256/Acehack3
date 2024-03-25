@@ -18,6 +18,7 @@ import Schedule from "./components/schedule";
 import AddressMap from "./pages/map";
 import AceHackSm from "/assets/images/website-v2.svg";
 import Live from "./pages/Live";
+import Timeline from "./pages/Timeline";
 import GetInvolved from "./pages/GetInvolved";
 
 const AceLogo = (prop) => {
@@ -53,6 +54,7 @@ const App = () => {
                   <Navbar />
                   <Home />
                   <About />
+                  <Timeline />
                   <Themes />
                   <Why />
                   <Prizes />
