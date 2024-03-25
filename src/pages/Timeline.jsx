@@ -8,7 +8,7 @@ const Timeline = () => {
         { direction: "right", time: "11:30 AM", heading: "Rajasthan Police Session" },
         { direction: "left", time: "12:00 PM", heading: "Hackathon starts" },
         { direction: "right", time: "01:30 PM", heading: "Lunch" },
-        { direction: "left", time: "02:30 PM", heading: "Nordex Session" },
+        { direction: "left", time: "02:30 PM", heading: "Nordek Session" },
         { direction: "right", time: "03:30 PM", heading: "Orkes Session" },
         { direction: "left", time: "04:10 PM", heading: "Hackquest Session" },
         { direction: "right", time: "06:30 PM", heading: "Funzone opens" },
