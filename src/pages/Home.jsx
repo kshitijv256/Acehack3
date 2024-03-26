@@ -45,7 +45,7 @@ const Home = () => {
           src={AceHackLogo}
         />
         <p className="md:text-4xl text-xl font-bold font-mono md:mt-5 text-center">Innovate - Elevate - Transform</p>
-        <CountdownTimer targetDate={new Date("2024-04-06T00:10:00")} />
+        <CountdownTimer targetDate={new Date("2024-04-06T09:30:00")} />
         <div className="flex flex-row flex-wrap w-full justify-center gap-4 mt-5 md:mt-0 mb-4 md:mb-0">
           {/* <div
             className="apply-button"
